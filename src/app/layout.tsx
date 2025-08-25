@@ -13,10 +13,10 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Luminix - IT Solution & Technology Next JS Template",
+    default: "Best Dentist in Gurgaon - Dr. Vineet Vinayak - Smilessence",
     template: "%s | Luminix",
   },
-  description: "Luminix is a cutting-edge Next.js template designed for IT solutions and tech businesses.",
+  description: "Smilessence is a renowned dental clinic with cutting-edge technology led by Dr. Vineet Vinayak, who is known as one of the best family dentists in Gurgaon.",
   icons: {
     icon: "/favicon.ico",
   },
