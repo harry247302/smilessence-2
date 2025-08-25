@@ -110,9 +110,9 @@ export default function HeaderOne() {
                     style={{ borderRadius: "100%" }}
                     alt="logo"
                   />
-                  <h5 className="m-2" style={{ color: "white" }}>
+                  {/* <h5 className="m-2" style={{ color: "white" }}>
                     Smilessence
-                  </h5>
+                  </h5> */}
                   {/* </Link> */}
                 </div>
               </div>
