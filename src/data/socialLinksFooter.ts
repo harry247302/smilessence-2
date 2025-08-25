@@ -12,13 +12,13 @@ const socialLinksFooter: SocialLink[] = [
                         <path d="M2.61987 16.7464V9.37041H0.137695V6.49583H2.61987V4.37591C2.61987 1.91577 4.12245 0.576172 6.31707 0.576172C7.36832 0.576172 8.27181 0.654439 8.53511 0.689422V3.26042L7.01302 3.26111C5.81946 3.26111 5.58836 3.82827 5.58836 4.66054V6.49583H8.43488L8.06426 9.37041H5.58836V16.7464H2.61987Z" fill="white" />
                       </svg>`,
 	},
-	{
-		name: "Twitter",
-		href: "https://x.com/VinayakVineet",
-		svg: ` <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.47743 6.98936L14.9996 0.570312H13.691L8.89613 6.14388L5.06647 0.570312H0.649414L6.44061 8.99854L0.649414 15.7299H1.95806L7.02158 9.84402L11.066 15.7299H15.483L9.47711 6.98936H9.47743ZM7.68506 9.0728L7.09829 8.23353L2.42958 1.55544H4.43959L8.20729 6.94488L8.79406 7.78414L13.6916 14.7896H11.6816L7.68506 9.07312V9.0728Z" fill="white" />
-                      </svg>`,
-	},
+	// {
+	// 	name: "Twitter",
+	// 	href: "https://x.com/VinayakVineet",
+	// 	svg: ` <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    //                     <path d="M9.47743 6.98936L14.9996 0.570312H13.691L8.89613 6.14388L5.06647 0.570312H0.649414L6.44061 8.99854L0.649414 15.7299H1.95806L7.02158 9.84402L11.066 15.7299H15.483L9.47711 6.98936H9.47743ZM7.68506 9.0728L7.09829 8.23353L2.42958 1.55544H4.43959L8.20729 6.94488L8.79406 7.78414L13.6916 14.7896H11.6816L7.68506 9.07312V9.0728Z" fill="white" />
+    //                   </svg>`,
+	// },
 	{
 		name: "Instagram",
 		href: "https://in.linkedin.com/in/dr-vineet-vinayak-202ba8102?original_referer=https%3A%2F%2Fwww.smilessence.co.in%2F",
@@ -27,11 +27,13 @@ const socialLinksFooter: SocialLink[] = [
                       </svg>`,
 	},
 	{
-		name: "LinkedIn",
-		href: "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFRqVNfWkz0LAAAAZjfy9vAsrjJOZ_0Hka680B6qOaCZ00K78Hpu5IRcZJJxOOK9vp4W1AUSy9rEgtJoHHRaT1A3E-0GjXIQGgr219KfZnFfCyzdP7CK-3EGgIM_rrQ0IH2uxg=&original_referer=https://www.smilessence.co.in/&sessionRedirect=https%3A%2F%2Fin.linkedin.com%2Fin%2Fdr-vineet-vinayak-202ba8102",
-		svg: `<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.31682 2.35804C4.31658 2.83452 4.12707 3.2914 3.78997 3.62816C3.45288 3.96492 2.99581 4.15397 2.51933 4.15373C2.04284 4.15349 1.58597 3.96398 1.24921 3.62689C0.912449 3.28979 0.723395 2.83273 0.723633 2.35624C0.723871 1.87976 0.913383 1.42288 1.25048 1.08612C1.58757 0.749364 2.04464 0.560309 2.52112 0.560547C2.99761 0.560785 3.45448 0.750297 3.79124 1.08739C4.128 1.42449 4.31706 1.88155 4.31682 2.35804ZM4.37072 5.48411H0.777531V16.7308H4.37072V5.48411ZM10.0479 5.48411H6.47273V16.7308H10.012V10.829C10.012 7.54121 14.2969 7.23579 14.2969 10.829V16.7308H17.8452V9.60729C17.8452 4.0648 11.5032 4.27141 10.012 6.99325L10.0479 5.48411Z" fill="white" />
-                      </svg>`,
+		name: "Youtube",
+		href: "https://www.youtube.com/@dr.vineetvinayak1419",
+		svg: `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 100 70" fill="none">
+  <rect width="100" height="70" rx="15" fill="white"/>
+  <polygon points="40,20 70,35 40,50" fill="#000000"/>
+</svg>
+`,
 	},
 ];
 
