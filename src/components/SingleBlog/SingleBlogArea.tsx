@@ -29,9 +29,7 @@ const SingleBlogArea = () => {
 
       <div className="luminix-padding-section">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              <div className="mr-30">
+             <div className="mr-30">
                 <div className="luminix-blog-d-thumb" data-aos="fade-up" data-aos-duration="700">
                   <Image width={826} height={500} src={blog15_img} alt="here is theme image" />
                 </div>
@@ -151,83 +149,6 @@ const SingleBlogArea = () => {
                 </div>
 
               </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="luminix-blog-sidebar">
-                <div className="luminix-blog-widgets">
-                  <form>
-                    <div className="luminix-search-box">
-                      <input type="search" placeholder="Type to search..." />
-                      <button id="luminix-search-btn" type="button"><i className="ri-search-line"></i></button>
-                    </div>
-                  </form>
-                </div>
-                <div className="luminix-blog-widgets">
-                  <h5>Blog Categories</h5>
-                  <Image width={191} height={2} className="line" src={line1_img} alt="here is theme image" />
-                  <div className="luminix-blog-categorie">
-                    <ul>
-                      <li><Link href="/single-blog">Uncategorized (78)</Link></li>
-                      <li><Link href="/single-blog">Technology (05)</Link></li>
-                      <li><Link href="/single-blog">Business & Marketing (23)</Link></li>
-                      <li><Link href="/single-blog">Digital Agency (10)</Link></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="luminix-blog-widgets">
-                  <h5>Recent Posts</h5>
-                  <Image width={156} height={2} className="line" src={line3_img} alt="here is theme image" />
-                  <Link className="luminix-recent-post-item pt-15" href="/single-blog">
-                    <div className="luminix-recent-post-thumb">
-                      <Image width={150} height={100} src={blog11_img} alt="here is theme image" />
-                    </div>
-                    <div className="luminix-recent-post-data">
-                      <span> <Image width={15} height={16} src={date_img} alt="here is theme image" />July 5, 2024</span>
-                      <div className="blog">
-                        <h6>Six ‘what ifs’ that could transformdigital agency</h6>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link className="luminix-recent-post-item" href="/single-blog">
-                    <div className="luminix-recent-post-thumb">
-                      <Image width={150} height={100} src={blog12_img} alt="here is theme image" />
-                    </div>
-                    <div className="luminix-recent-post-data">
-                      <span> <Image width={15} height={16} src={date_img} alt="here is theme image" /> July 3, 2024</span>
-                      <div className="blog">
-                        <h6>Case story: How to the design avatar generator</h6>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link className="luminix-recent-post-item" href="/single-blog">
-                    <div className="luminix-recent-post-thumb">
-                      <Image width={150} height={100} src={blog13_img} alt="here is theme image" />
-                    </div>
-                    <div className="luminix-recent-post-data">
-                      <span> <Image width={15} height={16} src={date_img} alt="here is theme image" />June 27, 2024</span>
-                      <div className="blog">
-                        <h6>Build a digital agency website in 4 easy steps</h6>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="luminix-blog-widgets">
-                  <h5>Tags</h5>
-                  <Image width={56} height={2} className="line" src={line2_img} alt="here is theme image" />
-                  <div className="luminix-blog-tags">
-                    <ul>
-                      <li><Link href="/single-blog">Business</Link></li>
-                      <li><Link href="/single-blog">Digital</Link></li>
-                      <li><Link href="/single-blog">IT Solution</Link></li>
-                      <li><Link href="/single-blog">Technology</Link></li>
-                      <li><Link href="/single-blog">Agency</Link></li>
-                      <li><Link href="/single-blog">Digital</Link></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

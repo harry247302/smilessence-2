@@ -13,7 +13,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Best Dentist in Gurgaon - Dr. Vineet Vinayak - Smilessence",
+    default: "Best Dentist in Gurgaon - Dr. Vineet Vinayak",
     template: "%s | Luminix",
   },
   description: "Smilessence - The Specialist Dental Centre is a renowned dental clinic with cutting-edge technology led by Dr. Vineet Vinayak, who is known as one of the best family dentists in Gurgaon.",
