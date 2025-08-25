@@ -1,7 +1,7 @@
 :root {
   --heading-color: #001a3d;
   --body-color: #4d5b68;
-  --accent-color: #2920d2;
+  --accent-color: #7ec9e4;
   --accent-color2: #2bc8eb;
   --white-color: #ffffff;
   --white-bg: #ffffff;
@@ -2352,10 +2352,11 @@ a.white-color {
     margin-bottom: 30px;
   }
 }
+
 .luminix-footer-section1 {
   padding: 120px 0 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
-  background-color: #001a3d;
+  background-color: var(--accent-bg);
 }
 @media (max-width: 991px) {
   .luminix-footer-section1 {

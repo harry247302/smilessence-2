@@ -129,7 +129,7 @@ export default function HeaderOne() {
                         >
                           <Link
                             style={{ color: "white", fontWeight: "600" }}
-                            href={item.link}
+                            href="/"
                           >
                             {item.title}
                           </Link>
@@ -148,7 +148,7 @@ export default function HeaderOne() {
                                       }`}
                                     >
                                       <Link
-                                        href={sub_item.link || "#"}
+                                        href="/"
                                         className={`${
                                           sub_item.has_inner_dropdown
                                             ? "no-border"
@@ -164,7 +164,7 @@ export default function HeaderOne() {
                                               <li key={inner_sub_i}>
                                                 <Link
                                                   href={
-                                                    inner_sub_item.link || "#"
+                                                   "#"
                                                   }
                                                 >
                                                   {inner_sub_item.title}
@@ -179,7 +179,7 @@ export default function HeaderOne() {
                                 } else {
                                   return (
                                     <li key={sub_i}>
-                                      <Link href={sub_item.link || "#"}>
+                                      <Link href={ "#"}>
                                         {sub_item.title}
                                       </Link>
                                     </li>
@@ -206,7 +206,7 @@ export default function HeaderOne() {
                         ? "   text-black shadow-md rounded-5"
                         : "bg-transparent text-black"
                     }`}
-                    href="/conact-us"
+                    href="/"
                   >
                     <p
                       style={{

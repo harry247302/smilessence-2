@@ -26,7 +26,7 @@ export default function ServiceHomeOne() {
               </div>
               <div className="col-xl-5 col-lg-4 d-flex align-items-center justify-content-end">
                 <div className="luminix-title-btn">
-                  <Link href="/about-us" className="luminix-default-btn pill">View All Solution 
+                  <Link href="/" className="luminix-default-btn pill">View All Solution 
                     <RightArrawWhitIcon />
                   </Link>
                 </div>
@@ -51,14 +51,14 @@ export default function ServiceHomeOne() {
           <Image width={60} height={60} src={icon1_img} alt="here is theme image" />
         </div>
         <div className="luminix-list-icon-data">
-          <Link href="/service">
+          <Link href="/">
             <h5>Root Canal</h5>
           </Link>
           <p>A root canal treats infected tooth pulp, relieving pain and saving natural teeth.</p>
         </div>
       </div>
       <div className="luminix-list-icon-btn">
-        <Link href="/single-service">
+        <Link href="/">
           <ServiceRightArrawIcon />
         </Link>
       </div>
@@ -73,14 +73,14 @@ export default function ServiceHomeOne() {
           <Image width={60} height={60} src={icon2_img} alt="here is theme image" />
         </div>
         <div className="luminix-list-icon-data">
-          <Link href="/single-service">
+          <Link href="/">
             <h5>Dental Implants</h5>
           </Link>
           <p>Dental implants replace missing teeth with durable, natural-looking solutions for long-lasting smiles.</p>
         </div>
       </div>
       <div className="luminix-list-icon-btn">
-        <Link href="/single-service">
+        <Link href="/">
           <ServiceRightArrawIcon />
         </Link>
       </div>
@@ -95,14 +95,14 @@ export default function ServiceHomeOne() {
           <Image width={60} height={60} src={icon3_img} alt="here is theme image" />
         </div>
         <div className="luminix-list-icon-data">
-          <Link href="/single-service">
+          <Link href="/">
             <h5>All On 4 Implants</h5>
           </Link>
           <p>All-on-4 implants restore a full arch of teeth using just four strategically placed implants.</p>
         </div>
       </div>
       <div className="luminix-list-icon-btn">
-        <Link href="/single-service">
+        <Link href="/">
           <ServiceRightArrawIcon />
         </Link>
       </div>
@@ -117,14 +117,14 @@ export default function ServiceHomeOne() {
           <Image width={60} height={60} src={icon4_img} alt="here is theme image" />
         </div>
         <div className="luminix-list-icon-data">
-          <Link href="/single-service">
+          <Link href="/">
               <h5>All On 6 Implants</h5>
           </Link>
           <p>All-on-6 implants provide a full-arch tooth replacement using six strong, securely placed implants.</p>
         </div>
       </div>
       <div className="luminix-list-icon-btn">
-        <Link href="/single-service">
+        <Link href="/">
           <ServiceRightArrawIcon />
         </Link>
       </div>

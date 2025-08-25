@@ -20,7 +20,7 @@ const HomeOne = () => {
       <WhyChooseHomeOne />
       <TestimonialHomeOne />
       <TeamHomeOne />
-      {/* <BlogHomeOne /> */}
+      <BlogHomeOne />
       <ContactHomeOne />
       <FooterOne />
     </Wrapper>

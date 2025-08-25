@@ -17,11 +17,11 @@ export default function BlogHomeOne() {
           <div className="row">
             <div className="col-xl-7 col-lg-8">
               <h6>[Our Latest News]</h6>
-              <h2 className="title pb-0">Explore our latest blogs and news</h2>
+              <h2 className="title pb-0">Explore our latest blogs </h2>
             </div>
             <div className="col-xl-5 col-lg-4 d-flex align-items-center justify-content-end">
               <div className="luminix-title-btn">
-                <Link href="/blog" className="luminix-default-btn">
+                <Link href="/" className="luminix-default-btn">
                   View All Post 
                   <RightArrawWhitIcon />
                 </Link>
@@ -29,45 +29,49 @@ export default function BlogHomeOne() {
             </div>
           </div>
         </div>
-        <div className="row">
-          {blog_data.map((item) => (
-            <div className="col-xl-4 col-md-6" key={item.id}>
-              <div className="luminix-blog-wrap" data-aos="fade-up" data-aos-duration={item.aosDelay}>
-                <div className="luminix-blog-thumb">
-                  <Link href="/single-blog">
-                    <Image width={416} height={300} src={item.image} alt={item.title} />
-                  </Link>
-                  <div className="luminix-blog-frame">
-                    <Link href="/single-blog">{item.category}</Link>
-                  </div>
-                </div>
-                <div className="luminix-blog-content">
-                  <div className="luminix-blog-meta">
-                    <Link href="/blog">
-                      <Image width={15} height={18} src={icon1_img} alt="Author" />
-                      by {item.author}
-                    </Link>
-                    <Link href="/blog">
-                      <Image width={15} height={16} src={date_img} alt="Date" />
-                      {item.date}
-                    </Link>
-                  </div>
-                  <div className="title pt-0">
-                    <h5 className="blog-title">
-                      <Link href="/blog">{item.title}</Link>
-                    </h5>
-                  </div>
-                  <div className="luminix-blog-btn">
-                    <Link href="/single-blog">
-                      Read More 
-                      <RightArrawIcon />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+      <div className="row">
+  {blog_data.map((item) => (
+    <div className="col-xl-4 col-md-6 d-flex" key={item.id}>
+      <div className="luminix-blog-wrap d-flex flex-column w-100" data-aos="fade-up" data-aos-duration={item.aosDelay} style={{ height: "100%" }}>
+        {/* Blog Image */}
+        <div className="luminix-blog-thumb">
+          <Link href="/">
+            <Image width={416} height={300} src={item.image} alt={item.title} />
+          </Link>
+          <div className="luminix-blog-frame">
+            {/* <Link href="/single-blog">{item.category}</Link> */}
+          </div>
         </div>
+
+        {/* Blog Content */}
+        <div className="luminix-blog-content d-flex flex-column justify-between flex-grow-1">
+          <div>
+            <div className="luminix-blog-meta">
+              <Link href="/blog">
+                <Image width={15} height={16} src={date_img} alt="Date" />
+                {item.date}
+              </Link>
+            </div>
+            <div className="title pt-0">
+              <h5 className="blog-title">
+                <Link href="/blog">{item.title}</Link>
+              </h5>
+            </div>
+          </div>
+
+          <div className="luminix-blog-btn mt-auto">
+            <Link href="/">
+              Read More
+              <RightArrawIcon />
+            </Link>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
   );

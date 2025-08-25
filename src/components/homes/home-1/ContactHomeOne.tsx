@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 // images import  
-import contact1_img from "@/assets/images/v1/contact1.png";
+import contact1_img from "@/assets/images/v1/img1.jpg";
 
 
 
@@ -48,7 +48,7 @@ export default function ContactHomeOne() {
             </div>
             <div className="col-lg-5 ">
               <div className="luminix-contact-thumb" data-aos="fade-up" data-aos-duration="700">
-                <Image width={470} height={646} src={contact1_img} alt="here is theme image" />
+                <Image width={646} height={646} src={contact1_img} alt="here is theme image" />
               </div>
             </div>
           </div>

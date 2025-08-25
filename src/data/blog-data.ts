@@ -1,9 +1,9 @@
 
 import { StaticImageData } from "next/image";
 // importing images for blog posts
-import blog_img_1 from "@/assets/images/blog/blog1.png"
-import blog_img_2 from "@/assets/images/blog/blog2.png"
-import blog_img_3 from "@/assets/images/blog/blog3.png"
+import blog_img_1 from "@/assets/images/blog/everything-you-need-to-know-before-starting-clear-aligners-s.jpg"
+import blog_img_2 from "@/assets/images/blog/age-no-bar-braces-and-alligners-for-all-ages-s.jpg"
+import blog_img_3 from "@/assets/images/blog/invisalign-alligners-the-invisible-braces-s.png"
 
 
 interface BlogDataType {
@@ -24,18 +24,18 @@ export const blog_data:BlogDataType[] = [
     id: 1,
     category: "Business",
     image: blog_img_1,
-    title: "A profitable business makes you happy and grow",
+    title: "Everything You Need to Know Before Starting Clear aligners.....",
     author: "admin",
-    date: "July 5, 2024",
+    date: "July 2025",
     aosDelay: "500"
   },
   {
     id: 2,
     category: "Marketing",
     image: blog_img_2,
-    title: "Business consulting drives results and success",
+    title: "Age No Bar -- Braces and Alligners for All Ages...",
     author: "admin",
-    date: "July 3, 2024",
+    date: "July 2025",
     aosDelay: "700"
   },
   {
@@ -43,8 +43,8 @@ export const blog_data:BlogDataType[] = [
     category: "Finance",
     image: blog_img_3,
     title: "Greater financial flexibility for strategic planning",
-    author: "admin",
-    date: "June 27, 2024",
+    author: "admin", 
+    date: "June 2025",
     aosDelay: "900"
   }
 ];
