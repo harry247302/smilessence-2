@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "Best Dentist in Gurgaon - Dr. Vineet Vinayak - Smilessence",
     template: "%s | Luminix",
   },
-  description: "Smilessence is a renowned dental clinic with cutting-edge technology led by Dr. Vineet Vinayak, who is known as one of the best family dentists in Gurgaon.",
+  description: "Smilessence - The Specialist Dental Centre is a renowned dental clinic with cutting-edge technology led by Dr. Vineet Vinayak, who is known as one of the best family dentists in Gurgaon.",
   icons: {
     icon: "/favicon.ico",
   },

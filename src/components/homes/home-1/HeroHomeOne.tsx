@@ -77,10 +77,10 @@ export default function HeroHomeOne() {
               textShadow: '0 1px 4px rgba(0,0,0,0.2)',
             }}
           >
-            Yes, we are talking about Smilessence. It is a one-stop solution to
+            Yes, we are talking about Smilessence - The Specialist Dental Centre. It is a one-stop solution to
             all your issues related to dental health. Whether you have got one
             issue or you want to opt for a routine check-up for keeping the
-            issues at bay, Smilessence is the best option
+            issues at bay, Smilessence - The Specialist Dental Centre is the best option
           </p>
           <div className="mt-4 mt-md-5" data-aos="fade-up" data-aos-duration="700">
             <Link

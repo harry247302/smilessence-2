@@ -136,7 +136,7 @@ export default function FooterOne() {
     </div>
 
     <div className="luminix-footer-bottom-text">
-      <p>© Copyright {new Date().getFullYear()}, All Rights Reserved by Smilessence</p>
+      <p>© Copyright {new Date().getFullYear()}, All Rights Reserved by Smilessence - The Specialist Dental Centre</p>
     </div>
   </div>
 </footer>
