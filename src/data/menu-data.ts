@@ -3,13 +3,13 @@
 const menu_data = [
 	{
 		title: "Home",
-		has_dropdown: true,
+		has_dropdown: false,
 		link: "#",
-		sub_menus: [
-			{ link: "/", title: "Demo list" },
-			{ link: "/", title: "Demo list" },
-			{ link: "/", title: "Demo list" },
-		],
+		// sub_menus: [
+			// { link: "/", title: "Demo list" },
+			// { link: "/", title: "Demo list" },
+			// { link: "/", title: "Demo list" },
+		// ],
 	},
 	{
 		title: "Treatments",
