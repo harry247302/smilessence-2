@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 
 // images import  
-import blog1_img from "@/assets/images/blog/blog1.png";
+// import blog1_img from "@/assets/images/blog/blog1.png";
 import icon1_img from "@/assets/images/blog/icon1.svg";
 import date_img from "@/assets/images/blog/date.svg";
 import blog2_img from "@/assets/images/blog/blog2.png"; 
@@ -23,7 +23,7 @@ export default function BlogHomeThree() {
             <div className="col-xl-4 col-md-6">
               <div className="luminix-blog-wrap" data-aos="fade-up" data-aos-duration="500">
                 <div className="luminix-blog-thumb">
-                  <Link href="/single-blog"><Image width={416} height={300} src={blog1_img} alt="here is theme image" /></Link>
+                  {/* <Link href="/single-blog"><Image width={416} height={300} src={blog1_img} alt="here is theme image" /></Link> */}
                   <div className="luminix-blog-frame"><Link href="/single-blog">Business</Link></div>
                 </div>
                 <div className="luminix-blog-content">

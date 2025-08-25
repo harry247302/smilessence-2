@@ -40,11 +40,11 @@ const OffCanvas = ({ setOpenMenu, openMenu }: OffCanvasProps) => {
 
 
       <div className={`luminix-menu-wrapper ${openMenu ? "luminix-body-visible" : ""}`}>
-        <div className="luminix-menu-area text-center">
+        {/* <div className="luminix-menu-area text-center">
           <div className="luminix-menu-mobile-top">
             <div className="mobile-logo">
               <Link href="/">
-                <Image width={120} height={31} src="/assets/images/logo/logo-dark.svg" alt="logo" />
+                <Image width={120} height={31} src="@/assets/images/logo/logo-dark.svg" alt="logo" />
               </Link>
             </div>
             <button className="luminix-menu-toggle mobile" onClick={() => setOpenMenu(false)}>
@@ -87,7 +87,7 @@ const OffCanvas = ({ setOpenMenu, openMenu }: OffCanvasProps) => {
             <Link className="luminix-default-btn sm-size" href="/contact-us" data-text="Get in Touch"><span className="btn-wraper">Get in Touch</span></Link>
             <Link className="luminix-default-btn sm-size" href="/about-us" data-text="Get in Touch"><span className="btn-wraper">About Us</span></Link>
           </div>
-        </div>
+        </div> */}
       </div>
 
 

@@ -157,7 +157,7 @@ export default function HeaderOne() {
                                       >
                                         {sub_item.title}
                                       </Link>
-                                      {sub_item.has_inner_dropdown && (
+                                      {/* {sub_item.has_inner_dropdown && (
                                         <ul className="sub-menu">
                                           {sub_item.sub_menus?.map(
                                             (inner_sub_item, inner_sub_i) => (
@@ -173,7 +173,7 @@ export default function HeaderOne() {
                                             )
                                           )}
                                         </ul>
-                                      )}
+                                      )} */}
                                     </li>
                                   );
                                 } else {

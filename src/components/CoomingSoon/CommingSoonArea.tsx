@@ -12,7 +12,7 @@ type TimeLeft = {
 
 
 // images import  
-import logo_dark from "@/assets/images/logo/logo-dark.svg";
+// import logo_dark from "@/assets/images/logo/logo-dark.svg";
 
 export default function CommingSoonArea() {
 
@@ -54,7 +54,7 @@ export default function CommingSoonArea() {
       <div className="luminix-padding-section">
         <div className="container">
           <div className="luminix-logo">
-            <Link href="/"><Image width={139} height={36} src={logo_dark} alt="here is theme image" /></Link>
+            {/* <Link href="/"><Image width={139} height={36} src={logo_dark} alt="here is theme image" /></Link> */}
           </div>
           <div className="luminix-coomig-soon-content">
             <h2 className="title pt-0">We're coming up with some exciting stuff soon!</h2>

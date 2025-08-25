@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useState } from 'react';
  
 // images import  
-import logo_dark from "@/assets/images/logo/logo-dark.svg";
+// import logo_dark from "@/assets/images/logo/logo-dark.svg";
 import call_icon from "@/assets/images/iconbox/call-icon.svg";
 
 
@@ -21,7 +21,7 @@ export default function HeaderTwo() {
   return (
     <>
       <header className={`site-header luminix-header-section ${sticky ? 'sticky-menu' : ''}`} id="sticky-menu">
-        <div className="luminix-header-bottom white-bg1">
+        {/* <div className="luminix-header-bottom white-bg1">
           <div className="container">
             <div className="row gx-3 align-items-center justify-content-between">
               <div className="col-8 col-sm-auto ">
@@ -100,7 +100,7 @@ export default function HeaderTwo() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </header>
       <OffCanvas setOpenMenu={setOpenMenu} openMenu={openMenu} />
 

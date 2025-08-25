@@ -17,7 +17,7 @@ export default function HeaderThree() {
   return (
     <>
       <header className={`site-header luminix-header-section luminix-header-three ${sticky ? 'sticky-menu' : ''}`} id="sticky-menu">
-        <div className="luminix-header-bottom">
+        {/* <div className="luminix-header-bottom">
           <div className="container">
             <div className="row gx-3 align-items-center justify-content-between">
               <div className="col-8 col-sm-auto ">
@@ -85,9 +85,9 @@ export default function HeaderThree() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </header>
-      <OffCanvas setOpenMenu={setOpenMenu} openMenu={openMenu} />
+      {/* <OffCanvas setOpenMenu={setOpenMenu} openMenu={openMenu} /> */}
 
     </>
   )
