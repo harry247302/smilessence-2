@@ -17,7 +17,7 @@ export default function BlogHomeOne() {
           <div className="row">
             <div className="col-xl-7 col-lg-8">
               <h6>[Our Latest News]</h6>
-              <h2 className="title pb-0">Explore our latest blogs </h2>
+              <h2 style={{fontSize:"50px"}} className="title pb-0">Explore our latest blogs </h2>
             </div>
             <div className="col-xl-5 col-lg-4 d-flex align-items-center justify-content-end">
               <div className="luminix-title-btn">

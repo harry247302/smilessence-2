@@ -29,8 +29,8 @@ export default function AboutHomeOne() {
             <div className="col-lg-6">
               <div className="luminix-default-content">
                 {/* <h6>[About Us]</h6> */}
-                <h2 className="title">From our family to yours</h2>
-                <p className="text">On Smilessence, you will find an abundance of information about our practice, procedures we provide, and dentistry in general.</p>
+                <h2 className="title" style={{fontSize:"50px"}}>From our family to yours</h2>
+                <p className="text">On Smilessence - The Specialist Dental Centre, you will find an abundance of information about our practice, procedures we provide, and dentistry in general.</p>
                                 <p className="text">You can easily schedule an appointment through our website at any time, making the process simple and convenient for you. If you prefer a more personal touch, you can also reach out to us directly by calling the numbers provided, and our friendly team will be more than happy to assist you. From the very first interaction, our goal is to make your experience smooth, welcoming, and stress-free. We truly value your trust, and we work hard every day to ensure that every visit is not only comfortable but also relaxing and reassuring, so that you feel completely at ease throughout your time with us.</p>
 
                 {/* <div className="luminix-list-icon-content">

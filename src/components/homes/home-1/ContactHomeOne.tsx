@@ -18,7 +18,7 @@ export default function ContactHomeOne() {
               <div className="luminix-contact-box pl-51">
                 <div className="luminix-contact-title">
                   <h6>[Contact Us Directly]</h6>
-                  <h2 className="title pb-0">Send us a message</h2>
+                  <h2 style={{fontSize:"50px"}} className="title pb-0">Send us a message</h2>
                 </div>
                 
                 <form>

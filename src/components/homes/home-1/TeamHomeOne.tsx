@@ -23,7 +23,7 @@ export default function TeamHomeOne({ style_2 }: StyleProps) {
      <div className="luminix-padding-section4">
   <div className="container">
     <div className="luminix-section-title center">
-      <h2 className="title">Our Dentists</h2>
+      <h2 className="itle" style={{fontSize:"50px"}}>Our Dentists</h2>
       <p className="text2">
 Our Dental Clinic has two dental experts available for your convenience:      </p>
     </div>

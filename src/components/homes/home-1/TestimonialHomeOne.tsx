@@ -54,7 +54,7 @@ export default function TestimonialHomeOne({ style_2 }: StyleProps) {
         <div className="container">
           <div className="luminix-section-title center">
             {/* {style_2 ? null : <h6>[Client Reviews]</h6>} */}
-            <h3 className="title">Hear what our happy clients say</h3>
+            <h2 className="title" style={{fontSize:"50px",margin:"auto"}}>Hear what our happy clients say</h2>
             <p className="text2">
               We have completed our projects seriously and have many positive
               client reviews that prove our expertise. Some of them are also

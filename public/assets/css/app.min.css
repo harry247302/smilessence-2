@@ -3576,7 +3576,7 @@ a.white-color {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 130px;
+  padding-top: 50px;
   flex-wrap: wrap;
 }
 @media (max-width: 991px) {
@@ -6329,7 +6329,7 @@ textarea::placeholder {
   flex-wrap: wrap;
 }
 .luminix-padding-section {
-  padding: 120px 0;
+  padding: 40px 0;
 }
 @media (max-width: 991px) {
   .luminix-padding-section {
@@ -6342,7 +6342,7 @@ textarea::placeholder {
   }
 }
 .luminix-padding-section2 {
-  /* padding: 120px 0 180px; */
+  padding: 55px 0 66px;
 }
 @media (max-width: 1199px) {
   .luminix-padding-section2 {
@@ -6360,7 +6360,7 @@ textarea::placeholder {
   }
 }
 .luminix-padding-section3 {
-  padding: 120px 0 170px;
+  padding: 50px 0 50px;
 }
 @media (max-width: 1199px) {
   .luminix-padding-section3 {
@@ -6378,7 +6378,7 @@ textarea::placeholder {
   }
 }
 .luminix-padding-section4 {
-  padding: 120px 0 96px;
+  padding: 40px 0 30px;
 }
 @media (max-width: 1199px) {
   .luminix-padding-section4 {
