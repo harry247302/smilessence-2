@@ -1756,6 +1756,13 @@ header.luminix-header-section.luminix-header-two.sticky-menu {
     padding-right: 0;
   }
 }
+
+@media (max-width: 650px) {
+  .luminix-header-info-wraper2 {
+    display: none;
+  }
+}
+
 .luminix-header-main-menu.menu2 {
   transition: all 0.4s;
   padding: 0;

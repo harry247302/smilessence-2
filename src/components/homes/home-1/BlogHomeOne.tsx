@@ -54,7 +54,7 @@ export default function BlogHomeOne() {
             </div>
             <div className="title pt-0">
               <h5 className="blog-title">
-                <Link href="/blog">{item.title}</Link>
+                <Link href="/">{item.title}</Link>
               </h5>
             </div>
           </div>
