@@ -8,10 +8,10 @@ import React from 'react'
 // images import  
 import thumb1_img from "@/assets/images/v1/thumb-01.png";
 import thumb2_img from "@/assets/images/v1/thumb-02.png";
-import icon1_img from "@/assets/images/iconbox/icon1.svg";
-import icon2_img from "@/assets/images/iconbox/icon2.svg";
-import icon3_img from "@/assets/images/iconbox/icon3.svg";
-import icon4_img from "@/assets/images/iconbox/icon4.svg";
+import icon1_img from "@/assets/images/iconbox/09.png";
+import icon2_img from "@/assets/images/iconbox/01.png";
+import icon3_img from "@/assets/images/iconbox/03.png";
+import icon4_img from "@/assets/images/iconbox/10.png";
 
 export default function ServiceHomeOne() {
   return (
