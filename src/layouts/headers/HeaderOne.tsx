@@ -129,7 +129,7 @@ export default function HeaderOne() {
                         >
                           <Link
                             style={{ color: "white", fontWeight: "600" }}
-                            href="/"
+                            href={item.link}
                           >
                             {item.title}
                           </Link>

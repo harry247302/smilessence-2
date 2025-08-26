@@ -4,7 +4,7 @@ import Wrapper from "@/layouts/Wrapper";
 import ServiceArea from "./ServiceArea";
 import TestimonialHomeOne from "../homes/home-1/TestimonialHomeOne";
 import CtaHomeTwo from "../homes/home-2/CtaHomeTwo";
-import FooterTwo from "@/layouts/footers/FooterTwo";
+import FooterOne from "@/layouts/footers/FooterOne";
 
  
 
@@ -16,7 +16,7 @@ const Service = () => {
       <ServiceArea />
       <TestimonialHomeOne style_2={true} />
       <CtaHomeTwo />
-      <FooterTwo />        
+      <FooterOne />        
     </Wrapper>
   );
 };

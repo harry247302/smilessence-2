@@ -31,8 +31,8 @@ export default function HeroHomeOne() {
 
         {/* Overlay */}
         <div
-          className="position-absolute top-0 start-0 w-100 h-100"
-          style={{ background: "rgba(0,0,0,0.5)", minHeight: '100%', minWidth: '100%' }}
+          className="position-absolute top-0 start-0 w-100 h-100 breadcrumb-wrapper"
+          style={{ minHeight: '100%', minWidth: '100%' }}
         ></div>
 
         {/* Content */}
@@ -45,10 +45,11 @@ export default function HeroHomeOne() {
             data-aos-duration="700"
             className="fw-bold mb-3"
             style={{
-              fontSize: '2.2rem',
+              fontSize: '3.5rem',
               lineHeight: 1.1,
               textShadow: '0 2px 8px rgba(0,0,0,0.4)',
               maxWidth: '95vw',
+              letterSpacing: '2px',
             }}
           >
             Best Family Dentist in India
@@ -61,6 +62,8 @@ export default function HeroHomeOne() {
               fontSize: '1.2rem',
               textShadow: '0 1px 4px rgba(0,0,0,0.3)',
               maxWidth: '90vw',
+              letterSpacing: '2px',
+
             }}
           >
             Best Family Dentist in India

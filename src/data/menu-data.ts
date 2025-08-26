@@ -4,7 +4,17 @@ const menu_data = [
 	{
 		title: "Home",
 		has_dropdown: false,
-		link: "#",
+		link: "/",
+		// sub_menus: [
+			// { link: "/", title: "Demo list" },
+			// { link: "/", title: "Demo list" },
+			// { link: "/", title: "Demo list" },
+		// ],
+	},
+		{
+		title: "Who we are",
+		has_dropdown: false,
+		link: "/about-us",
 		// sub_menus: [
 			// { link: "/", title: "Demo list" },
 			// { link: "/", title: "Demo list" },
@@ -39,20 +49,20 @@ const menu_data = [
 	{
 		title: "Awards",
 		has_dropdown: false,
-		link: "#",
-		sub_menus: [
-			{ title: "Portfolio", link: "/" },
-			{ title: "Portfolio Details", link: "/" },
-		],
+		link: "/certificates",
+		// sub_menus: [
+		// 	{ title: "Portfolio", link: "/" },
+		// 	{ title: "Portfolio Details", link: "/" },
+		// ],
 	},
 	{
 		title: "Achievements",
 		has_dropdown: false,
-		link: "#",
-		sub_menus: [
-			{ title: "Blog", link: "/" }, 
-			{ title: "Blog Details", link: "/" },
-		],
+		link: "/research",
+		// sub_menus: [
+		// 	{ title: "Blog", link: "/" }, 
+		// 	{ title: "Blog Details", link: "/" },
+		// ],
 	},
 	{
 		title: "Dental Implants",
