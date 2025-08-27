@@ -40,7 +40,7 @@ const Service =   () => {
 
       {service && <ServiceArea service={service} />}
 
-      <CtaHomeTwo />
+      {/* <CtaHomeTwo /> */}
       <FooterOne />        
     </Wrapper>
   );
