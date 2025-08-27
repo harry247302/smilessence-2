@@ -120,30 +120,29 @@ const SingleBlogArea = () => {
           blend of modern technology and highly-skilled individuals.
         </p>
       </div>
-      <div className="container py-5">
+     <div className="container py-5">
         <div className="row">
           {service_data.map((service, index) => (
-            <Link href={`service/${service?.service_title}`} key={index}>
-              <div
-                className="col-md-4 col-12 mb-4"
-                key={index}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-              >
+            <div
+              className="col-lg-4 col-md-6 col-12 mb-4"
+              key={index}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <Link href={`/service/${service?.service_title}`} passHref>
                 <div
-                  className="card text-white service-card-responsive"
+                  className="card text-white service-card-responsive h-100"
                   style={{
                     overflow: "hidden",
                     cursor: "pointer",
-                    minHeight: 340,
                     position: "relative",
                   }}
                 >
-                  {/* Image block */}
+                  {/* Image */}
                   <div
                     style={{
                       overflow: "hidden",
-                      height: "300px",
+                      height: "100%",
                       position: "relative",
                     }}
                   >
@@ -151,35 +150,32 @@ const SingleBlogArea = () => {
                       <img
                         src={service.default_image}
                         alt={service.service_title}
-                        className="card-img"
+                        className="card-img img-fluid"
                         style={{
-                          height: "100%",
-                          width: "100%",
                           objectFit: "cover",
                           transform:
-                            hoveredIndex === index ? "scale(1.2)" : "scale(1)",
+                            hoveredIndex === index ? "scale(1.1)" : "scale(1)",
                           transition: "transform 0.5s ease",
+                          width: "100%",
+                          height: "100%",
                         }}
                       />
                     ) : (
                       <Image
                         src={service.default_image}
                         alt={service.service_title}
-                        width={400}
-                        height={300}
+                        fill
                         className="card-img"
                         style={{
-                          height: "100%",
-                          width: "100%",
                           objectFit: "cover",
                           transform:
-                            hoveredIndex === index ? "scale(1.2)" : "scale(1)",
-                          transition: "transform 1.5s ease",
+                            hoveredIndex === index ? "scale(1.1)" : "scale(1)",
+                          transition: "transform 0.5s ease",
                         }}
                       />
                     )}
 
-                    {/* Gradient overlay only at bottom */}
+                    {/* Gradient Overlay */}
                     <div
                       style={{
                         position: "absolute",
@@ -193,7 +189,7 @@ const SingleBlogArea = () => {
                     />
                   </div>
 
-                  {/* Text content */}
+                  {/* Text Content */}
                   <div
                     style={{
                       position: "absolute",
@@ -205,23 +201,29 @@ const SingleBlogArea = () => {
                     }}
                   >
                     <h5 className="card-title">{service.service_title}</h5>
-                    {/* <p className="card-text">{service.description}</p> */}
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
 
-        {/* Inline responsive styles */}
+        {/* Responsive styles */}
         <style jsx>{`
           .service-card-responsive {
             min-width: 0;
+            border: none;
+            border-radius: 8px;
+          }
+
+          .card-img {
+            height: 300px;
+            width: 100%;
           }
 
           @media (max-width: 991px) {
-            .service-card-responsive {
-              margin-bottom: 1.5rem !important;
+            .card-img {
+              height: 250px !important;
             }
           }
 
@@ -231,10 +233,16 @@ const SingleBlogArea = () => {
             }
           }
 
-          @media (max-width: 600px) {
+          @media (max-width: 576px) {
             .card-img {
-              height: 140px !important;
+              height: 150px !important;
               border-radius: 8px !important;
+            }
+          }
+
+          @media (max-width: 400px) {
+            .card-img {
+              height: 120px !important;
             }
           }
         `}</style>
