@@ -3,6 +3,8 @@
 
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 @import "../../public/assets/css/animate.css";
 @import "../../public/assets/css/aos.css";
@@ -40,3 +42,76 @@
   border-radius: 8px;
 }
 
+
+/* oral tips css */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
+}
+
+.carousel-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.carousel-title::first-letter {
+  color: red; /* To match the image's "Oral" */
+}
+
+.carousel-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.schedule-button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: #f0f0f0;
+}

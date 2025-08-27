@@ -20,16 +20,17 @@ export default function FooterOne() {
         className="luminix-footer-section1"
         style={{
           position: 'relative',
-          backgroundImage: `url('/assets/images/contact-us/contact1.png')`,
+          backgroundImage: `url('/assets/images/footer/footer-image.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
+          listStyle: 'none !important',
         }}
       >
         {/* Fullscreen overlay */}
         <div
           style={{
-            backgroundColor: '#252525f3', // red with opacity — change to rgba(0,0,0,0.6) for black
+            background: '#000000c7',
             position: 'absolute',
             top: 0,
             left: 0,
@@ -68,7 +69,7 @@ export default function FooterOne() {
                   <div className="luminix-footer-title">
                     <h5>Our Services</h5>
                   </div>
-                  <ul>
+                  <ul style={{ listStyle: 'none !important' }}>
                     <li>
                       <Link href="/">About Us</Link>
                     </li>
@@ -92,13 +93,13 @@ export default function FooterOne() {
                   <div className="luminix-footer-title">
                     <h5>Contact Info</h5>
                   </div>
-                  <ul>
+                  <ul style={{ listStyle: 'none !important' }}>
                     <li>
                       <Image width={22} height={25} src={location_img} alt="here is theme image" />
                       SFF/ 102, KFF 102 KFF 103, Ansal Palam Triangle, (Next to McDonald's) Palam Vihar, Gurgaon – 122017
                     </li>
                     <li>
-                      <a href="mailto:name@email.com">
+                      <a href="mailto:drvineetvinayak@outlook.com">
                         <Image width={25} height={21} src={mail_img} alt="here is theme image" />
                         drvineetvinayak@outlook.com
                       </a>
