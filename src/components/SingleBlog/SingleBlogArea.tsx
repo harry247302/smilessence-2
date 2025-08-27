@@ -96,7 +96,10 @@ const SingleBlogArea = () => {
   }, []);
 
   return (
-    <div className="luminix-padding-section" style={{paddingBottom:"0px !important"}}>
+    <div
+      className="luminix-padding-section"
+      style={{ paddingBottom: "0px !important" }}
+    >
       <div className="container">
         <h3 className="text-center">
           Get the <span style={{ color: "#7ec9e4" }}>Best Treatment</span> for{" "}
@@ -120,7 +123,7 @@ const SingleBlogArea = () => {
           blend of modern technology and highly-skilled individuals.
         </p>
       </div>
-     <div className="container py-5">
+      <div className="container py-5">
         <div className="row">
           {service_data.map((service, index) => (
             <div
@@ -161,10 +164,10 @@ const SingleBlogArea = () => {
                         }}
                       />
                     ) : (
-                      <Image
+                      <img
                         src={service.default_image}
                         alt={service.service_title}
-                        fill
+                        // fill
                         className="card-img"
                         style={{
                           objectFit: "cover",
@@ -449,21 +452,23 @@ const SingleBlogArea = () => {
             </div>
 
             {/* The call-to-action button. */}
-            <button
-              style={{
-                width: "100%",
-                padding: "0.75rem 2rem",
-                borderRadius: "9999px",
-                color: "#1f2937",
-                fontWeight: "500",
-                border: "2px solid #9ca3af",
-                cursor: "pointer",
-                transition: "background-color 0.2s",
-                backgroundColor: "white",
-              }}
-            >
-              Schedule now
-            </button>
+            <a href="/contact-us">
+              <button
+                style={{
+                  width: "100%",
+                  padding: "0.75rem 2rem",
+                  borderRadius: "9999px",
+                  color: "#1f2937",
+                  fontWeight: "500",
+                  border: "2px solid #9ca3af",
+                  cursor: "pointer",
+                  transition: "background-color 0.2s",
+                  backgroundColor: "white",
+                }}
+              >
+                Schedule now
+              </button>
+            </a>
           </div>
         </div>
       </div>
