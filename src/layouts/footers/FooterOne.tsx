@@ -30,7 +30,7 @@ export default function FooterOne() {
         {/* Fullscreen overlay */}
         <div
           style={{
-            background: '#000000c7',
+            background: '#02232f',
             position: 'absolute',
             top: 0,
             left: 0,
@@ -67,20 +67,26 @@ export default function FooterOne() {
               <div style={{ fontSize: "15px" }} className="col-xxl-2 col-xl-6 col-md-6">
                 <div className="luminix-footer-menu ml-15 ml-50">
                   <div className="luminix-footer-title">
-                    <h5>Our Services</h5>
+                    <h5>Our Pages</h5>
                   </div>
                   <ul style={{ listStyle: 'none !important' }}>
                     <li>
-                      <Link href="/">About Us</Link>
+                      <Link href="/">Home</Link>
                     </li>
                     <li>
-                      <Link href="/">Dental</Link>
+                      <Link href="/about-us">Who we are</Link>
                     </li>
                     <li>
-                      <Link href="/">Healthy</Link>
+                      <Link href="/certificates">Certificates</Link>
                     </li>
                     <li>
-                      <Link href="/">Gallery</Link>
+                      <Link href="/service">Service</Link>
+                    </li>
+                     <li>
+                      <Link href="/contact-us">Dental Implants</Link>
+                    </li>
+                    <li>
+                      <Link href="/Gallery">Gallery</Link>
                     </li>
                     <li>
                       <Link href="/blog">Contact Us</Link>
@@ -135,8 +141,9 @@ export default function FooterOne() {
               </div>
             </div>
           </div>
-
+          
           <div className="luminix-footer-bottom-text">
+            <p> <a href="">Terms & Condition</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Privary and Policy</a> </p>
             <p>© Copyright {new Date().getFullYear()}, All Rights Reserved by Smilessence - The Specialist Dental Centre</p>
           </div>
         </div>

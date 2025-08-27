@@ -36,9 +36,9 @@ Our Dental Clinic has two dental experts available for your convenience:      </
             <Image width={306} height={400} src={team2_img} alt="here is theme image" />
             <div className="luminix-team-content">
               <Link href="/single-team">
-                <h5>Henry Collins</h5>
+                <h5>Dr. (Prof) Meenu Vinayak</h5>
               </Link>
-              <p>Senior Consultant</p>
+              <p >BDS, MDS - Prosthodontist & Crown Bridge</p>
               <div className="luminix-team-social">
                 <ul>
                   {socialLinks.map((link, index) => (
@@ -59,9 +59,9 @@ Our Dental Clinic has two dental experts available for your convenience:      </
             <Image width={306} height={400} src={team3_img} alt="here is theme image" />
             <div className="luminix-team-content">
               <Link href="/single-team">
-                <h5>Oliver Wilson</h5>
+                <h5>Dr. (Prof) Vineet Vinayak</h5>
               </Link>
-              <p>Finance Consultant</p>
+              <p >BDS, MDS - Conservative Dentistry & Endodontics</p>
               <div className="luminix-team-social">
                 <ul>
                   {socialLinks.map((link, index) => (

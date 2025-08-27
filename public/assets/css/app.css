@@ -2423,7 +2423,7 @@ a.luminix-header-info img {
   text-align: left;
   visibility: hidden;
   min-width: 220px;
-  border-radius: 0 0 6px 6px;
+  /* border-radius: 0 0 6px 6px; */
 }
 .main-menu ul.sub-menu li {
   padding: 5px 10px 5px 20px;
@@ -2474,7 +2474,7 @@ a.luminix-header-info img {
   top: 0;
   margin: 0 0;
   margin-left: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .main-menu ul.sub-menu li ul.sub-menu li ul {
   left: 100%;

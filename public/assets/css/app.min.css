@@ -2115,7 +2115,7 @@ a.luminix-header-info img {
   text-align: left;
   visibility: hidden;
   min-width: 350px;
-  border-radius: 0 0 6px 6px;
+  /* border-radius: 0 0 6px 6px; */
 }
 .main-menu ul.sub-menu li {
   padding: 5px 10px 5px 20px;
@@ -2163,10 +2163,10 @@ a.luminix-header-info img {
 .main-menu ul.sub-menu li ul.sub-menu {
   left: 100%;
   right: auto;
-  top: 0;
+  top: -12px;
   margin: 0 0;
   margin-left: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .main-menu ul.sub-menu li ul.sub-menu li ul {
   left: 100%;
@@ -4149,7 +4149,7 @@ img.plasicon {
   border: 1px solid var(--white-color);
 }
 .luminix-team-wrap:hover .luminix-team-content {
-  height: 150px;
+  height: 200px;
   background-color: var(--accent-color2);
 }
 .luminix-team-wrap:hover .luminix-team-content h5,

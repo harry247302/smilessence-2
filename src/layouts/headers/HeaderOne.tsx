@@ -134,7 +134,7 @@ export default function HeaderOne() {
                                       }`}
                                     >
                                       <Link
-                                        href="/"
+                                        href={sub_item.link}
                                         className={`${
                                           sub_item.has_inner_dropdown
                                             ? "no-border"
@@ -143,14 +143,14 @@ export default function HeaderOne() {
                                       >
                                         {sub_item.title}
                                       </Link>
-                                      {/* {sub_item.has_inner_dropdown && (
+                                      {sub_item.has_inner_dropdown && (
                                         <ul className="sub-menu">
                                           {sub_item.sub_menus?.map(
                                             (inner_sub_item, inner_sub_i) => (
                                               <li key={inner_sub_i}>
                                                 <Link
                                                   href={
-                                                   "#"
+                                                    inner_sub_item.link
                                                   }
                                                 >
                                                   {inner_sub_item.title}
@@ -159,7 +159,7 @@ export default function HeaderOne() {
                                             )
                                           )}
                                         </ul>
-                                      )} */}
+                                      )}
                                     </li>
                                   );
                                 } else {
@@ -215,7 +215,7 @@ export default function HeaderOne() {
                       className="luminix-menu-toggle d-inline-block d-xl-none"
                       onClick={() => setOpenMenu(!openMenu)}
                     >
-                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-list" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 </svg>
                     </button>
