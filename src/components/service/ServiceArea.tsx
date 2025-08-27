@@ -1,18 +1,8 @@
 "use client";
-import Link from "next/link";
-import Image from "next/image";
-// import ContactForm from '@/form/ContactForm';
-import service_data, { ServiceItem } from "@/data/service-data";
-import RightArrawSmallIcon from "@/svg/RightArrawSmallIcon";
-import contact2_img from "@/assets/images/contact-us/contact2.png";
-import call_img from "@/assets/images/contact-us/call.svg";
-import email_img from "@/assets/images/contact-us/email.svg";
-import location_img from "@/assets/images/contact-us/location.svg";
+import { ServiceItem } from "@/data/service-data";
+
 import ContactForm from "@/form/ContactForm";
-import service_data_two from "@/data/service-data-two";
 import { FC, useEffect, useState } from "react";
-import { log } from "node:console";
-import { usePathname } from "next/navigation";
 import { Carousel } from "react-bootstrap";
 
 interface ServiceProps {
@@ -23,50 +13,36 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
 
   const slides = [
     {
-      // title: "Oral Tips",
-      // text: "Dentists say that the most important part of tooth care happens at home...",
       videoUrl: "https://www.youtube.com/watch?v=SFraNgfNx80",
       thumbnailUrl:
         "/assets/images/smilessence-video-testimonial/smilessence-video-testimonial-1.jpg",
     },
     {
-      // title: "Oral Tips",
-      // text: "Brushing and flossing properly, along with regular checkups...",
       videoUrl: "https://www.youtube.com/watch?v=-b2phUBJOZQ",
       thumbnailUrl:
         "/assets/images/smilessence-video-testimonial/smilessence-video-testimonial-2.jpg",
     },
     {
-      // title: "Oral Tips",
-      // text: "Prevent tooth decay and gum disease with daily oral care...",
       videoUrl: "https://www.youtube.com/watch?v=My440XFFrA8",
       thumbnailUrl:
         "/assets/images/smilessence-video-testimonial/smilessence-video-testimonial-3.jpg",
     },
   ];
 
-  // State to keep track of the current active slide index.
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // A function to handle navigation when a dot is clicked.
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
-  // useEffect to handle auto-sliding of the carousel.
-  // The interval will advance the slide every 5 seconds.
   useEffect(() => {
     const interval = setInterval(() => {
-      // Move to the next slide, or wrap around to the first slide.
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 5000); // Change slide every 5000ms (5 seconds)
 
-    // Cleanup function to clear the interval when the component unmounts.
-    // This prevents memory leaks.
     return () => clearInterval(interval);
   }, [slides.length]); // Dependency array ensures the effect runs only if the number of slides changes.
 
-  // Get the current slide's data from the slides array.
   const currentSlideData = slides[currentSlide];
 
   // dr slider
@@ -77,14 +53,14 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
       qualification: "BDS, MDS - Conservative Dentistry & Endodontics",
       specialty: "Speciality – Endodontist, RCT & Implant Specialist",
       timing: "Mon - Sun: 08:30 AM - 08:30 PM",
-      image: "/assets/images/about-us/dr.sir.png", // Place this image in /public
+      image: "/assets/images/about-us/dr.sir.png",
     },
     {
       name: "Dr. (Prof) Meenu Vinayak",
       qualification: "BDS, MDS - Prosthodontist & Crown Bridge",
       specialty: "Speciality - Crown Bridge & Dentures",
       timing: "Mon - Sun: 09:00 AM - 08:30 PM",
-      image: "/assets/images/about-us/dr.mam.png", // Place this image in /public
+      image: "/assets/images/about-us/dr.mam.png",
     },
   ];
 
@@ -99,7 +75,7 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
   };
 
   const headerStyle: React.CSSProperties = {
-    backgroundColor: "#d32f2f",
+    backgroundColor: "#7b7b7b",
     textAlign: "center",
     padding: "20px",
   };
@@ -120,7 +96,7 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
     padding: "20px",
     fontSize: "14px",
     color: "#333",
-    backgroundColor: "#dfdfdf",
+    backgroundColor: "#dfdfdf80",
   };
 
   const bulletStyle: React.CSSProperties = {
@@ -168,14 +144,9 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
                 className="luminix-contat-us-thumb w-100 d-flex justify-content-center"
                 data-aos="fade-up"
                 data-aos-duration="700"
-              >
-                {/* You can add an image or any other content here */}
-              </div>
+              ></div>
               <div className="luminix-contact-box w-100 mt-3">
-                <div className="luminix-contact-title mb-2">
-                  {/* Optional Title for Contact Form */}
-                  {/* <h2 className="title pb-0 pt-0">Fill the form below:</h2> */}
-                </div>
+                <div className="luminix-contact-title mb-2"></div>
                 <ContactForm />
               </div>
 
@@ -186,7 +157,6 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
                     display: "flex",
                     alignItems: "flex-start",
                     justifyContent: "flex-start",
-                    // minHeight: "100vh",
                     background: "url('./assets/images/oral-tips/bg1.jpg')",
                     backgroundAttachment: "fixed",
                     backgroundSize: "cover",
@@ -198,31 +168,14 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
                 >
                   <div
                     style={{
-                      // backgroundColor: "#ffffff",
-                      // padding: "2rem",
                       borderRadius: "1.5rem",
-                      // boxShadow:
-                      // "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                       maxWidth: "24rem",
                       width: "100%",
                       textAlign: "center",
-                      // border: "1px solid #e5e7eb",
                       transition: "all 300ms",
                       transform: "scale(1)",
                     }}
                   >
-                    {/* Title */}
-                    {/* <h1
-                      style={{
-                        fontSize: "2.5rem",
-                        fontWeight: "800",
-                        marginBottom: "1rem",
-                      }}
-                    >
-                      <span style={{ color: "#ef4444" }}>Oral</span>
-                      <span style={{ color: "#111827" }}> Tips</span>
-                    </h1> */}
-
                     {/* Video Thumbnail with Play Button */}
                     <div
                       style={{
@@ -265,18 +218,6 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
                       </div>
                     </div>
 
-                    {/* Text */}
-                    {/* <p
-                      style={{
-                        fontSize: "1rem",
-                        color: "#4b5563",
-                        marginBottom: "2rem",
-                        lineHeight: "1.625",
-                      }}
-                    >
-                      {currentSlideData.text}
-                    </p> */}
-
                     {/* Navigation Dots */}
                     <div
                       style={{
@@ -305,46 +246,20 @@ const ServiceArea: FC<ServiceProps> = ({ service }) => {
                         ></button>
                       ))}
                     </div>
-
-                    {/* CTA Button */}
-                    {/* <button
-                      style={{
-                        width: "100%",
-                        padding: "0.75rem 2rem",
-                        borderRadius: "9999px",
-                        color: "#1f2937",
-                        fontWeight: "500",
-                        border: "2px solid #9ca3af",
-                        cursor: "pointer",
-                        transition: "background-color 0.2s",
-                        backgroundColor: "white",
-                      }}
-                    >
-                      Schedule now
-                    </button> */}
                   </div>
                 </div>
               </div>
 
               {/* carousel end */}
 
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  justifyContent: "flex-start",
-                }}
-              >
-                <a
-                  href="javascript:void(0)"
-                  className="model-open"
-                  data-model=".Model_appointment"
-                >
+              <div className="container">
+                <div className="d-flex align-items-start justify-content-start w-100">
                   <img
                     src="/assets/images/smilessence-video-testimonial/contact-us.png"
                     alt="smilessence"
+                    className="img-fluid w-100"
                   />
-                </a>
+                </div>
               </div>
 
               <div className="container mt-5">
