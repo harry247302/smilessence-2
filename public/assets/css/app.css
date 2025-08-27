@@ -1896,7 +1896,7 @@ header.luminix-header-section.luminix-header-two.sticky-menu {
 }
 
 .sticky-menu .luminix-header-top {
-  margin-top: -60px;
+  /* margin-top: -60px; */
   transition: all 0.4s;
   opacity: 0;
 }

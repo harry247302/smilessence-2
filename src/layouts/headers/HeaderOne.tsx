@@ -42,23 +42,14 @@ export default function HeaderOne() {
         id="sticky-menu position-absolute"
       >
         <div className="luminix-header-top bg-accent">
-          <div className="cntainer" style={{ width: "99%", margin: "auto" }}>
+          <div className="cotainer" style={{ width: "99%", margin: "auto" }}>
             <div className="luminix-header-info-wraper">
-              <div className="luminix-header-info-wrap">
-                <div className="luminix-header-info-data">
-                  <ul>
-                    {/* <li>
-                      <a href="mailto:name@email.com">
-                        <Image
-                          width={20}
-                          height={16}
-                          src={mail_icon}
-                          alt="here is theme image"
-                        />
-                        support@gmail.com
-                      </a>
-                    </li> */}
-                    <li>
+              <div className="luminix-header-info-wrap" style={{width:"100%"}} >
+                <div className="luminix-header-info-data" style={{width:"100%"}}>
+                  <ul style={{display:"flex",alignContent:"center",justifyContent:"space-between",width:"100%"}}>
+                
+                   <div>
+                     <li >
                       <Image
                         width={17}
                         height={20}
@@ -68,13 +59,10 @@ export default function HeaderOne() {
                       SFF/ 102, KFF 102 KFF 103, Ansal Palam Triangle, (Next to
                       McDonald's) Palam Vihar, Gurgaon – 122017
                     </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="luminix-header-info-and-social">
-                <div className="luminix-header-info-data">
-                  <ul>
-                    <li>
+                      
+                   </div>
+                      <div>
+                         <li>
                       <Image
                         width={20}
                         height={21}
@@ -83,14 +71,12 @@ export default function HeaderOne() {
                       />
                       Open All Days : 09:00am to 8:30pm
                     </li>
-                  </ul>
-                </div>
-                <div className="luminix-header-info-data">
-                  <ul>
-                    <li>+91 9811 303 933</li>
+                      <li className="hide"> +91 9811 303 933</li>
+                      </div>
                   </ul>
                 </div>
               </div>
+            
             </div>
           </div>
         </div>
@@ -102,7 +88,7 @@ export default function HeaderOne() {
           <div style={{ width: "90%", margin: "auto" }} className="cntainer">
             <div className="row gx-3 align-items-center justify-content-between">
               <div className="col-8 col-sm-auto ">
-                <div className="header-logo1 d-flex justify-content-center align-items-center *:">
+                <div className="">
                   {/* <Link href="/"> */}
                   <Image
                     width={70}
@@ -229,7 +215,9 @@ export default function HeaderOne() {
                       className="luminix-menu-toggle d-inline-block d-xl-none"
                       onClick={() => setOpenMenu(!openMenu)}
                     >
-                      <span></span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
                     </button>
                   </nav>
                 </div>

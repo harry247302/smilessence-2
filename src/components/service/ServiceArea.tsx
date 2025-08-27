@@ -38,7 +38,7 @@ const ServiceArea: FC<ServiceProps> = ({service}) => {
           </div>
 
           {/* Right Content */}
-          <div className="col-lg-4 col-12">
+          <div  className="col-lg-4 col-12">
             <div className="contact-side-box d-flex flex-column align-items-center align-items-lg-stretch gap-4">
               <div
                 className="luminix-contat-us-thumb w-100 d-flex justify-content-center"
@@ -57,6 +57,7 @@ const ServiceArea: FC<ServiceProps> = ({service}) => {
             </div>
           </div>
         </div>
+        
 
       </div>
       {/* Responsive styles */}
