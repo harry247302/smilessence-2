@@ -7478,7 +7478,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   position: absolute;
-  background: rgba(41, 32, 210, 0.6);
+  background: #0b39588f;
 }
 @media (max-width: 1199px) {
   .breadcrumb-wrapper {

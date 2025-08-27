@@ -5,7 +5,7 @@ import HeaderOne from "@/layouts/headers/HeaderOne";
 import Wrapper from "@/layouts/Wrapper";
 import ServiceArea from "./ServiceArea";
 import CtaHomeTwo from "../homes/home-2/CtaHomeTwo";
-import FooterTwo from "@/layouts/footers/FooterTwo";
+import FooterOne from "@/layouts/footers/FooterOne";
 
 import { FC, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -41,7 +41,7 @@ const Service =   () => {
       {service && <ServiceArea service={service} />}
 
       <CtaHomeTwo />
-      <FooterTwo />
+      <FooterOne />        
     </Wrapper>
   );
 };
