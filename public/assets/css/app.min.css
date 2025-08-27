@@ -1609,7 +1609,18 @@ header.luminix-header-section.luminix-header-two.sticky-menu {
 @media (max-width: 1199px) {
   .luminix-header-top {
     display: none;
+
   }
+}
+
+@media (min-width:1203px) and (max-width: 1310px) {
+  .luminix-header-top {
+    padding: 10px 0px;  
+  }
+  .hide{
+    display: none !important;
+  }
+  
 }
 .luminix-header-info-data ul li {
   display: inline-block;
