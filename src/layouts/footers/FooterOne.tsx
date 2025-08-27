@@ -16,54 +16,54 @@ import clock_img from "@/assets/images/iconbox/clock.svg";
 export default function FooterOne() {
   return (
     <>
-   <footer
-  className="luminix-footer-section1"
-  style={{
-    position: 'relative',
-    backgroundImage: `url('/assets/images/contact-us/contact1.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-  }}
->
-  {/* Fullscreen overlay */}
-  <div
-    style={{
-      backgroundColor: '#252525f3', // red with opacity — change to rgba(0,0,0,0.6) for black
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      zIndex: 1,
-    }}
-  ></div>
+      <footer
+        className="luminix-footer-section1"
+        style={{
+          position: 'relative',
+          backgroundImage: `url('/assets/images/contact-us/contact1.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* Fullscreen overlay */}
+        <div
+          style={{
+            backgroundColor: '#252525f3', // red with opacity — change to rgba(0,0,0,0.6) for black
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 1,
+          }}
+        ></div>
 
-  {/* Content container should be above the overlay */}
-  <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-    <div className="luminix-footer-one">
-      <div className="row">
-        <div className="col-xxl-4 col-xl-6 col-md-6">
-          <div className="luminix-foter-textarea" style={{fontSize:"15px"}}>
-            {/* <Link href="/"> */}
-              <Image width={90} height={90} style={{borderRadius:"100px"}} src={logo_white1_img} alt="Logo" />
-            {/* </Link> */}
-            <p style={{color:"white"}}>
-              To achieve sustainable growth and success, we run businesses that must consistently adapt to
-              competitive innovations, operational efficiencies and client-centric strategies.
-            </p>
-            <div className="luminix-social-wrap wrap2">
-              <ul>
-                {socialLinksFooter.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.href} target="_blank" dangerouslySetInnerHTML={{ __html: link.svg }} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-<div style={{fontSize:"15px"}} className="col-xxl-2 col-xl-6 col-md-6">
+        {/* Content container should be above the overlay */}
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <div className="luminix-footer-one">
+            <div className="row">
+              <div className="col-xxl-4 col-xl-6 col-md-6">
+                <div className="luminix-foter-textarea" style={{ fontSize: "15px" }}>
+                  {/* <Link href="/"> */}
+                  <Image width={90} height={90} style={{ borderRadius: "100px" }} src={logo_white1_img} alt="Logo" />
+                  {/* </Link> */}
+                  <p style={{ color: "white" }}>
+                    To achieve sustainable growth and success, we run businesses that must consistently adapt to
+                    competitive innovations, operational efficiencies and client-centric strategies.
+                  </p>
+                  <div className="luminix-social-wrap wrap2">
+                    <ul>
+                      {socialLinksFooter.map((link, index) => (
+                        <li key={index}>
+                          <Link href={link.href} target="_blank" dangerouslySetInnerHTML={{ __html: link.svg }} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div style={{ fontSize: "15px" }} className="col-xxl-2 col-xl-6 col-md-6">
                 <div className="luminix-footer-menu ml-15 ml-50">
                   <div className="luminix-footer-title">
                     <h5>Our Services</h5>
@@ -87,7 +87,7 @@ export default function FooterOne() {
                   </ul>
                 </div>
               </div>
-              <div style={{fontSize:"15px"}} className="col-xxl-3 col-xl-6 col-md-6">
+              <div style={{ fontSize: "15px" }} className="col-xxl-3 col-xl-6 col-md-6">
                 <div className="luminix-footer-menu2 ml-24">
                   <div className="luminix-footer-title">
                     <h5>Contact Info</h5>
@@ -106,7 +106,7 @@ export default function FooterOne() {
                     <li>
                       <a href="tel:+088">
                         <Image width={24} height={25} src={call_img} alt="here is theme image" />
-                       +91 9811 303 933
+                        +91 9811 303 933
                       </a>
                     </li>
                     <li>
@@ -116,30 +116,30 @@ export default function FooterOne() {
                   </ul>
                 </div>
               </div>
-        {/* other columns remain unchanged */}
+              {/* other columns remain unchanged */}
 
-        <div className="col-xxl-3 col-xl-6 col-md-6">
-          <div className="luminix-footer-menu2 ml-50 mb-0">
-            <div className="luminix-footer-title">
-              <h5>Newsletter</h5>
-            </div>
-            <div className="luminix-subscription-field" style={{fontSize:"15px"}}>
-              <p>Stay updated with our latest news</p>
-              <form>
-                <input type="email" placeholder="Your Email Address" />
-                <button className="subcription-btn2 pill" type="submit">Subscribe now</button>
-              </form>
+              <div className="col-xxl-3 col-xl-6 col-md-6">
+                <div className="luminix-footer-menu2 ml-50 mb-0">
+                  <div className="luminix-footer-title">
+                    <h5>Newsletter</h5>
+                  </div>
+                  <div className="luminix-subscription-field" style={{ fontSize: "15px" }}>
+                    <p>Stay updated with our latest news</p>
+                    <form>
+                      <input type="email" placeholder="Your Email Address" />
+                      <button className="subcription-btn2 pill" type="submit">Subscribe now</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div className="luminix-footer-bottom-text">
-      <p>© Copyright {new Date().getFullYear()}, All Rights Reserved by Smilessence - The Specialist Dental Centre</p>
-    </div>
-  </div>
-</footer>
+          <div className="luminix-footer-bottom-text">
+            <p>© Copyright {new Date().getFullYear()}, All Rights Reserved by Smilessence - The Specialist Dental Centre</p>
+          </div>
+        </div>
+      </footer>
 
     </>
   )

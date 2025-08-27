@@ -281,7 +281,7 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 button {
   padding: 0;
@@ -370,7 +370,7 @@ h4 {
 .h5,
 h5 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.33em;
 }
 .h6,
@@ -596,7 +596,7 @@ img {
 .rt-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 .mouse-cursor,
 .pointer {
@@ -1401,7 +1401,7 @@ img {
 .slick-bullet .slick-dots {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 .slick-bullet .slick-dots li {
   position: relative;

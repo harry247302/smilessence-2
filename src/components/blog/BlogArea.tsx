@@ -6,6 +6,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
+import blog_img_1 from "@/assets/images/blog/everything-you-need-to-know-before-starting-clear-aligners-s.jpg"
+import blog_img_2 from "@/assets/images/blog/age-no-bar-braces-and-alligners-for-all-ages-s.jpg"
+import blog_img_3 from "@/assets/images/blog/invisalign-alligners-the-invisible-braces-s.png"
 
 // images import  
 import blog4_img from "@/assets/images/blog/blog4.png";
@@ -19,170 +22,160 @@ import blog11_img from "@/assets/images/blog/blog11.png";
 import blog12_img from "@/assets/images/blog/blog12.png"; 
 import blog13_img from "@/assets/images/blog/blog13.png"; 
 import line2_img from "@/assets/images/blog/line2.svg";
+import RightArrawWhitIcon from '@/svg/RightArrawWhitIcon';
+// import blog_data from '@/data/blog-data';
 
- 
+import { StaticImageData } from "next/image";
+import RightArrawIcon from '@/svg/RightArrawIcon';
+
+   interface BlogDataType {
+    id: number;
+    category: string;
+    image: StaticImageData;
+    title: string;
+    author: string;
+    date: string;
+    aosDelay: string;
+}[]
+
+  export const blog_data:BlogDataType[] = [
+  {
+    id: 1,
+    category: "Business",
+    image: blog_img_1,
+    title: "Everything You Need to Know Before Starting Clear aligners.....",
+    author: "admin",
+    date: "July 2025",
+    aosDelay: "500"
+  },
+  {
+    id: 2,
+    category: "Marketing",
+    image: blog_img_2,
+    title: "Age No Bar -- Braces and Alligners for All Ages...",
+    author: "admin",
+    date: "July 2025",
+    aosDelay: "700"
+  },
+  {
+    id: 3,
+    category: "Finance",
+    image: blog_img_3,
+    title: "Greater financial flexibility for strategic planning",
+    author: "admin", 
+    date: "June 2025",
+    aosDelay: "900"
+  }
+];
 
 
 
 export default function BlogArea() {
+  console.log(blog_data);
   return (
     <>
-  <div className="luminix-padding-section">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-8">
-          <div className="luminix-blog-wrap2 wrap4 mr-30" data-aos="fade-up" data-aos-duration="500">
-            <div className="luminix-blog-thumb2">
-              <Image width={824} height={500} src={blog4_img} alt="here is theme image" />
+   <div className="luminix-padding-section4 light-bg1">
+      <div className="container">
+        <div className="luminix-section-title">
+          <div className="row">
+            <div className="col-xl-7 col-lg-8">
+              <h6>[Our Latest News]</h6>
+              <h2 style={{fontSize:"50px"}} className="title pb-0">Explore our latest blogs </h2>
             </div>
-            <div className="luminix-blog-content2">
-              <div className="luminix-blog-meta">
-                <Link href="/blog"><Image width={15} height={18} src={icon1_img} alt="here is theme image" />by admin</Link>
-                <Link href="/blog"><Image width={15} height={16} src={date_img} alt="here is theme image" />July 5, 2024</Link>
-              </div>
-              <div className="title pt-0">
-                <h3 className="blog-title"><Link href="/single-blog">5 Tips for a productive week in business</Link></h3>
-              </div>
-              <p>As a business leader, the way you begin your week sets the tone for the days ahead. Adopting positive habits and strategic planning can significantly impact your...</p>
-              <div className="luminix-blog-btn">
-                <Link href="/single-blog">Read More
-                  <RightArrawSmallIcon /> 
+            <div className="col-xl-5 col-lg-4 d-flex align-items-center justify-content-end">
+              <div className="luminix-title-btn">
+                <Link href="/" className="luminix-default-btn">
+                  View All Post 
+                  <RightArrawWhitIcon />
                 </Link>
-              </div>
-            </div>
-          </div>
-          <div className="luminix-blog-wrap2 wrap4 mr-30" data-aos="fade-up" data-aos-duration="700">
-            <div className="luminix-blog-thumb2">
-              <Image width={824} height={500} src={blog10_img} alt="here is theme image" />
-            </div>
-            <div className="luminix-blog-content2">
-              <div className="luminix-blog-meta">
-                <Link href="/blog"><Image width={15} height={18} src={icon1_img} alt="here is theme image" />by admin</Link>
-                <Link href="/blog"><Image width={15} height={16} src={date_img} alt="here is theme image" />July 3, 2024</Link>
-              </div>
-              <div className="title pt-0">
-                <h3 className="blog-title"><Link href="/single-blog">How to make 10x more money online</Link></h3>
-              </div>
-              <p>If you currently earn money from your blog from ads & affiliates then the most obvious way to 10x your blog income is by 10x-ing your traffic. For example, if you...</p>
-              <div className="luminix-blog-btn">
-                <Link href="/single-blog">Read More
-                  <RightArrawSmallIcon />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="luminix-blog-wrap2 wrap4 mr-30" data-aos="fade-up" data-aos-duration="900">
-            <div className="luminix-blog-thumb2">
-              <Image width={824} height={500} src={blog9_img} alt="here is theme image" />
-            </div>
-            <div className="luminix-blog-content2">
-              <div className="luminix-blog-meta">
-                <Link href="/blog"><Image width={15} height={18} src={icon1_img} alt="here is theme image" />by admin</Link>
-                <Link href="/blog"><Image width={15} height={16} src={date_img} alt="here is theme image" />July 27, 2024</Link>
-              </div>
-              <div className="title pt-0">
-                <h3 className="blog-title"><Link href="/single-blog">Caring team during the holiday season</Link></h3>
-              </div>
-              <p>The holiday season is a time for celebration, gratitude, and, most importantly, showing that you care. As a business leader, demonstrating your appreciation...</p>
-              <div className="luminix-blog-btn">
-                <Link href="/single-blog">Read More
-                  <RightArrawSmallIcon />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="luminix-pagination center">
-            <Link className="pagi-btn btn2" href="/single-blog"> 
-              <PaginationLeftIcon />
-            </Link>
-            <ul>
-              <li><Link className="current" href="#">1</Link></li>
-              <li><Link href="/single-blog">2</Link></li>
-              <li><Link href="/single-blog">3</Link></li>
-            </ul>
-            <Link className="pagi-btn" href="/single-blog"> 
-              <PaginationRightIcon />
-            </Link>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="luminix-blog-sidebar">
-            <div className="luminix-blog-widgets">
-              <form onSubmit={(e) => e.preventDefault()}>
-                <div className="luminix-search-box">
-                  <input type="search" placeholder="Type to search..." />
-                  <button id="luminix-search-btn" type="button"><i className="ri-search-line"></i></button>
-                </div>
-              </form>
-            </div>
-            <div className="luminix-blog-widgets">
-              <h5>Blog Categories</h5>
-              <Image width={191} height={2} className="line" src={line1_img} alt="here is theme image" />
-              <div className="luminix-blog-categorie">
-                <ul>
-                  <li><Link href="/single-blog">Uncategorized (78)</Link></li>
-                  <li><Link href="/single-blog">Technology (05)</Link></li>
-                  <li><Link href="/single-blog">Business & Marketing (23)</Link></li>
-                  <li><Link href="/single-blog">Digital Agency (10)</Link></li>
-                </ul>
-              </div>
-            </div>
-            <div className="luminix-blog-widgets">
-              <h5>Recent Posts</h5>
-              <Image width={155} height={2} className="line" src={line3_img} alt="here is theme image" />
-              <Link className="luminix-recent-post-item pt-15" href="/single-blog">
-                <div className="luminix-recent-post-thumb">
-                  <Image width={150} height={100}  src={blog11_img} alt="here is theme image" />
-                </div>
-                <div className="luminix-recent-post-data">
-                  <span> <Image width={15} height={16} src={date_img} alt="here is theme image" />July 5, 2024</span>
-                  <div className="blog">
-                    <h6>Six ‘what ifs’ that could transformdigital agency</h6>
-                  </div>
-                </div>
-              </Link>
-              <Link className="luminix-recent-post-item" href="/single-blog">
-                <div className="luminix-recent-post-thumb">
-                  <Image width={150} height={100} src={blog12_img} alt="here is theme image" />
-                </div>
-                <div className="luminix-recent-post-data">
-                  <span> <Image width={15} height={16} src={date_img} alt="here is theme image" /> July 3, 2024</span>
-                  <div className="blog">
-                    <h6>Case story: How to the design avatar generator</h6>
-                  </div>
-                </div>
-              </Link>
-              <Link className="luminix-recent-post-item" href="/single-blog">
-                <div className="luminix-recent-post-thumb">
-                  <Image width={150} height={100} src={blog13_img} alt="here is theme image" />
-                </div>
-                <div className="luminix-recent-post-data">
-                  <span> <Image width={15} height={16} src={date_img} alt="here is theme image" />June 27, 2024</span>
-                  <div className="blog">
-                    <h6>Build a digital agency website in 4 easy steps</h6>
-                  </div>
-                </div>
-              </Link>
-            </div>
-            <div className="luminix-blog-widgets">
-              <h5>Tags</h5>
-              <Image width={56} height={2} className="line" src={line2_img} alt="here is theme image" />
-              <div className="luminix-blog-tags">
-                <ul>
-                  <li><Link href="/single-blog">Business</Link></li>
-                  <li><Link href="/single-blog">Digital</Link></li>
-                  <li><Link href="/single-blog">IT Solution</Link></li>
-                  <li><Link href="/single-blog">Technology</Link></li>
-                  <li><Link href="/single-blog">Agency</Link></li>
-                  <li><Link href="/single-blog">Digital</Link></li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
+
+      <div className="row blog-grid-responsive">
+        {blog_data.map((item) => (
+          <div className="col-xl-4 col-md-6 col-12 d-flex" key={item.id}>
+            <div className="luminix-blog-wrap d-flex flex-column w-100 h-100" data-aos="fade-up" data-aos-duration={item.aosDelay}>
+              {/* Blog Image */}
+              <div className="luminix-blog-thumb">
+                <Link href="/">
+                  <Image
+                    width={416}
+                    height={300}
+                    src={typeof item.image === 'string' ? item.image : item.image?.src}
+                    alt={item.title}
+                    style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: 12 }}
+                  />
+                </Link>
+                <div className="luminix-blog-frame">
+                  {/* <Link href="/single-blog">{item.category}</Link> */}
+                </div>
+              </div>
+
+              {/* Blog Content */}
+              <div className="luminix-blog-content d-flex flex-column justify-between flex-grow-1">
+                <div>
+                  <div className="luminix-blog-meta">
+                    <Link href="/blog">
+                      <Image width={15} height={16} src={date_img} alt="Date" />
+                      {item.date}
+                    </Link>
+                  </div>
+                  <div className="title pt-0">
+                    <h5 className="blog-title">
+                      <Link href="/">{item.title}</Link>
+                    </h5>
+                  </div>
+                </div>
+
+                <div className="luminix-blog-btn mt-auto">
+                  <Link href="/">
+                    Read More
+                    <RightArrawIcon />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Responsive styles */}
+      <style jsx>{`
+        .blog-grid-responsive > div[class*='col-'] {
+          margin-bottom: 32px;
+        }
+        @media (max-width: 991px) {
+        .blog-grid-responsive > div[class*='col-'] {
+            margin-bottom: 24px;
+          }
+        }
+        @media (max-width: 767px) {
+          .blog-grid-responsive {
+            display: flex;
+            flex-direction: column;
+          }
+          .blog-grid-responsive > div[class*='col-'] {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 18px;
+          }
+          .luminix-blog-wrap {
+            min-width: 0;
+          }
+        }
+        @media (max-width: 600px) {
+          .luminix-blog-wrap {
+            padding: 0.5rem !important;
+          }
+          .luminix-blog-thumb img {
+            border-radius: 8px !important;
+          }
+        }
+      `}</style>
+
       </div>
     </div>
-  </div>
     </>
   )
 }

@@ -4,10 +4,14 @@ import Wrapper from "@/layouts/Wrapper";
 import CtaHomeTwo from "../homes/home-2/CtaHomeTwo";
 import FooterTwo from "@/layouts/footers/FooterTwo";
 import SingleBlogArea from "./SingleBlogArea";
+import { ServiceItem } from "@/data/service-data";
+import { FC } from "react";
 
+interface ServiceProps {
+  data: ServiceItem[];
+}
 
-
-const SingleBlog = () => {
+const SingleBlog: FC<ServiceProps>  = () => {
   return (
     <Wrapper>
       <HeaderOne />

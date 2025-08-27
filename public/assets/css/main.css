@@ -327,11 +327,11 @@
 }
 
 .site-menu-main li {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .site-menu-main ul {
-  list-style: none;
+  /* list-style: none; */
   margin-left: 0;
 }
 

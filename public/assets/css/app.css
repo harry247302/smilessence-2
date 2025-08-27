@@ -320,7 +320,7 @@ ol,
 li {
   margin: 0px;
   padding: 0px;
-  list-style: none;
+  /* list-style: none; */
 }
 
 button {
@@ -714,7 +714,7 @@ img {
 .rt-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 .mouse-cursor,
@@ -1678,7 +1678,7 @@ img {
 .slick-bullet .slick-dots {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 .slick-bullet .slick-dots li {
   position: relative;
