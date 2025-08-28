@@ -75,7 +75,7 @@ const menu_data = [
 	{
 		title: "Dental Implants",
 		has_dropdown: false,
-		link: "/",
+		link: "/service/Dental%20Implants",
 		sub_menus: [
 			{ title: "Page 1", link: "/" }, 
 			{ title: "page 2", link: "/" },

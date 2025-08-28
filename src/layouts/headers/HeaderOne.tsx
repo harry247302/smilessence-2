@@ -15,13 +15,19 @@ import clock_icon from "@/assets/images/iconbox/clock.svg";
 import logo_dark from "@/assets/images/logo/logo-dark.png";
 import call_icon from "@/assets/images/iconbox/call-icon.svg";
 import { Phone } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function HeaderOne() {
   const { sticky } = useSticky();
   const [openMenu, setOpenMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const router = useRouter()
+  
+  const handleClick = (value:string)=>{
+  router.push(`${value}`)
+}
 
-  useEffect(() => {
+useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
@@ -113,12 +119,12 @@ export default function HeaderOne() {
                             item.has_dropdown ? "menu-item-has-children" : ""
                           }`}
                         >
-                          <Link
+                          <button
                             style={{ color: "white", fontWeight: "600" }}
-                            href={item.link}
+                            onClick={()=>{handleClick(item.link)}}
                           >
                             {item.title}
-                          </Link>
+                          </button>
 
                           {item.has_dropdown && (
                             <ul className="sub-menu">

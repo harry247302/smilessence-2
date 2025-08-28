@@ -130,39 +130,68 @@ export default function HeroHomeOne() {
         `}</style>
       </section>
 
-      {/* <div className="container z-5  top-12 inset-0 z-20 flex items-center h-full">
-          <div className="text-black">
-            <h5 data-aos="fade-up" data-aos-duration="700">
-              [Welcome to Luminix]
-            </h5>
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="900"
-              className="hero-title"
-            >
-              Grow & manage your business
-            </h1>
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              className="text max-w-xl"
-            >
-              Welcome to luminix, a leading consulting firm with a strong
-              history of excellence and innovation. With a passion for
-              precision, efficiency and commitment to quality, we strive for
-              outstanding service.
-            </p>
-            <div className="mt-8" data-aos="fade-up" data-aos-duration="700">
-              <Link
-                href="/service"
-                className="luminix-default-btn pill luminix-hero-btn inline-flex items-center"
-              >
-                View Our Services
-                <RightArrawWhitIcon />
-              </Link>
-            </div>
-          </div>
-        </div>  */}
+      <div >
+      <div >
+        {/* Top Highlights */}
+      <div className="d-flex mt-4 justify-content-around align-items-center text-center border-bottom">
+  <div className="mb-3  pe-3">
+    <img
+      src="/assets/images/iconbox/trophy-icon_11168015.png"
+      style={{ width: '50px' }}
+      alt="Trophy Icon"
+      className="mb-2"
+    />
+    <div>
+      <strong>Award-Winning</strong> Dental Clinic in India - 2022
+    </div>
+  </div>
+
+  <div className="border-end " style={{height:"100px"}}>
+
+  </div>
+
+  <div className="mb-3  pe-3">
+    <img
+      src="/assets/images/iconbox/urban-planning_17261007.png"
+      style={{ width: '50px' }}
+      alt="Urban Planning Icon"
+      className="mb-2"
+    />
+    <div>
+      <strong>Established</strong> with Integrity in <strong>1996</strong>
+    </div>
+  </div>
+
+  <div className="border-end " style={{height:"100px"}}>
+  </div>
+  <div className="mb-3">
+    <img
+      src="/assets/images/iconbox/anniversary_6811126.png"
+      style={{ width: '50px' }}
+      alt="Anniversary Icon"
+      className="mb-2"
+    />
+    <div>
+      <strong>Ranked #1</strong> Dentist in Gurgaon
+    </div>
+  </div>
+</div>
+
+
+        {/* Recommendation Banner */}
+        <div style={{backgroundColor:"#7ec9e436"}} className=" p-3 text-center d-flex align-items-center justify-content-center gap-3">
+          <img
+            src="/assets/images/iconbox/medal_610333.png"
+            style={{ width: '40px' }}
+            alt="Medal Icon"
+          />
+          <span className="fw-medium" style={{color:""}}>
+            Highly Recommended by Expats, Influencers, Fashion Industry for{' '}
+            <strong>Smilemakeover and Full M  outh Implants</strong>
+          </span>
+        </div>
+      </div>
+    </div>
     </>
   );
 }

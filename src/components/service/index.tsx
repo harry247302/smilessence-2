@@ -1,47 +1,58 @@
 "use client";
 
-import Breadcrumb from "@/common/Breadcrumb";
-import HeaderOne from "@/layouts/headers/HeaderOne";
-import Wrapper from "@/layouts/Wrapper";
-import ServiceArea from "./ServiceArea";
-import CtaHomeTwo from "../homes/home-2/CtaHomeTwo";
-import FooterOne from "@/layouts/footers/FooterOne";
-
 import { FC, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import Wrapper from "@/layouts/Wrapper";
+import FooterOne from "@/layouts/footers/FooterOne";
+import Breadcrumb2 from "@/common/Breadcrumb2";
+import ServiceArea from "./ServiceArea";
+
 import service_data, { ServiceItem } from "@/data/service-data";
 
-// interface ServiceProps {
-//   service: ServiceItem[];
-// }
+// Utility function to normalize strings (slugify)
+const normalize = (str: string) =>
+  str.toLowerCase().replace(/[\s\-]+/g, "").replace(/[^\w]/g, "");
 
-const Service =   () => {
+const Service: FC = () => {
   const pathname = usePathname();
-  const [service, setService] = useState<ServiceItem | null>(null); // Use single item, not array
+  const [service, setService] = useState<ServiceItem | null>(null);
 
   const lastSegment = decodeURIComponent(
     pathname.split("/").filter(Boolean).pop() || ""
   );
 
   useEffect(() => {
-    const filtered = service_data.find(item => item.service_title === lastSegment);
-    setService(filtered ?? null);
-    // console.log(lastSegment, "=================service==================");
+    const normalizedSegment = normalize(lastSegment);
+
+    const matchedService = service_data.find(
+      (item) => normalize(item.service_title) === normalizedSegment
+    );
+
+    setService(matchedService ?? null);
   }, [pathname]);
+
   return (
     <Wrapper>
       <HeaderOne />
 
-      <Breadcrumb
+      <Breadcrumb2
         title={service?.service_title || "Service Details"}
         subtitle="Service Details"
-        bg_img={service?.banner_image || "singleblog-breadcrumb-bg"}
+        bg_img={service?.banner_image}
       />
 
-      {service && <ServiceArea service={service} />}
+      {service ? (
+        <ServiceArea service={service} />
+      ) : (
+        <div style={{ textAlign: "center", padding: "50px" }}>
+          <h2>Service not found</h2>
+          <p>Please check the URL or return to the homepage.</p>
+        </div>
+      )}
 
-      {/* <CtaHomeTwo /> */}
-      <FooterOne />        
+      <FooterOne />
     </Wrapper>
   );
 };

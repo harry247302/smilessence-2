@@ -5990,17 +5990,17 @@ blockquote img {
   opacity: 0;
 }
 .luminix-iconbox-wrap:hover .luminix-iconbox-icon path {
-  fill: var(--white-color);
+  /* fill: var(--white-color); */
 }
 .luminix-iconbox-wrap:hover .luminix-iconbox-content h5,
 .luminix-iconbox-wrap:hover .luminix-iconbox-content p {
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 .luminix-iconbox-wrap:hover .luminix-iconbox-btn a {
-  color: var(--white-color);
+  /* color: var(--white-color); */
 }
 .luminix-iconbox-wrap:hover .luminix-iconbox-btn a path {
-  stroke: var(--white-color);
+  /* stroke: var(--white-color); */
 }
 .luminix-iconbox-icon {
   padding-bottom: 20px;
@@ -8584,3 +8584,60 @@ a.luminix-default-btn.sm-size {
   min-height: 100vh;
   margin-top: 0px;
 }
+  .gallery-tabs { display:flex; justify-content:center; gap:18px; margin:32px 0 18px; }
+        .gallery-tab { font-size:1.5rem; font-weight:500; color:#111; cursor:pointer; }
+        .gallery-tab.active { color:#e53949; }
+        .gallery-dot { font-size:2rem; color:#111; user-select:none; }
+
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 20px;
+          margin-top: 2rem;
+        }
+        .gallery-item {
+          position: relative;
+          overflow: hidden;
+          border-radius: 12px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          aspect-ratio: 1/1;
+        }
+        .gallery-media {
+          width: 100%; height: 100%; object-fit: cover;
+          transition: transform 0.35s;
+        }
+        .gallery-item:hover .gallery-media { transform: scale(1.07); }
+
+        /* Overlay */
+        .overlay {
+          position: absolute;
+          bottom: -100%;
+          left: 0;
+          right: 0;
+          height: 100%;
+          background: rgba(0,0,0,0.5);
+          display: flex; justify-content: center; align-items: center;
+          transition: bottom 0.3s ease-in-out;
+          cursor: pointer;
+        }
+        .gallery-item:hover .overlay { bottom: 0; }
+        .plus-icon {
+          font-size: 3rem;
+          color: white;
+          font-weight: bold;
+        }
+
+        /* Lightbox */
+        .lightbox {
+          position: fixed;
+          top:0; left:0; right:0; bottom:0;
+          background: rgba(0,0,0,0.85);
+          display: flex; justify-content: center; align-items: center;
+          z-index: 9999;
+        }
+        .lightbox-content img, .lightbox-content video {
+          max-width: 90vw;
+          max-height: 90vh;
+          border-radius: 10px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }

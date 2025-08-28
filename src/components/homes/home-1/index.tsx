@@ -9,6 +9,7 @@ import TeamHomeOne from "./TeamHomeOne";
 import BlogHomeOne from "./BlogHomeOne";
 import ContactHomeOne from "./ContactHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
+import Collab from "./Collab";
 
 const HomeOne = () => {
   return (
@@ -21,6 +22,7 @@ const HomeOne = () => {
       <TestimonialHomeOne />
       <TeamHomeOne />
       <BlogHomeOne />
+      <Collab/>
       <ContactHomeOne />
       <FooterOne />
     </Wrapper>

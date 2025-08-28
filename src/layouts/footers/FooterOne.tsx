@@ -113,7 +113,7 @@ export default function FooterOne() {
                     <li>
                       <a href="tel:+088">
                         <Image width={24} height={25} src={call_img} alt="here is theme image" />
-                        +91 9811 303 933
+                        +91 9811 303 933f
                       </a>
                     </li>
                     <li>

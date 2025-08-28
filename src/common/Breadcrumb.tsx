@@ -1,4 +1,3 @@
-import { log } from "console";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,11 +9,11 @@ type BreadcrumbProps = {
 
 
 const Breadcrumb = ({ title, subtitle, bg_img }: BreadcrumbProps) => {
-  console.log(bg_img)
+  
   return (
     <>
-      <div className={`breadcrumb-wrapper ${bg_img}`} style={{backgroundImage: `url(${bg_img}`,backgroundPosition: "center", backgroundSize: "contain",backgroundRepeat:" no-repeat"}}>
-        <div className="containe">
+      <div className={`breadcrumb-wrapper ${bg_img}`}>
+        <div className="container">
 
           <div className="breadcrumb-content">
             <h1 className="breadcrumb-title">{title}</h1>
