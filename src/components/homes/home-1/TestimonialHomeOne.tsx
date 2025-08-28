@@ -64,7 +64,7 @@ export default function TestimonialHomeOne({ style_2 }: StyleProps) {
         </div>
         <div className="container" style={{ width: "95%", margin: "auto" }}>
           <div className="testimonial-grid-responsive">
-            {testimonials.map((item, index) => (
+            {testimonials.slice(0,4).map((item, index) => (
               <div key={index} className="lumini-t-wrap card-responsive">
                 <div className="luminix-t-header">
                   <Image width={140} height={24} src={rating_img} alt="rating" />

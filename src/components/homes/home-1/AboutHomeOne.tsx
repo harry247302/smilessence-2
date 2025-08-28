@@ -8,7 +8,7 @@ import React from 'react'
 
 
 // images import  
-import about_img from "@/assets/images/about-us/Venezuela.jpeg";
+import about_img from "@/assets/images/gallery/09.jpg";
 import icon1_img from "@/assets/images/about-us/icon1.svg"; 
 
 export default function AboutHomeOne() {
@@ -19,7 +19,7 @@ export default function AboutHomeOne() {
           <div className="row">
             <div className="col-lg-6">
               <div className="luminix-about-thumb" >
-                <Image width={600} height={520} src={about_img} alt="here is theme image" />
+                <Image width={600} height={450} src={about_img} alt="here is theme image" />
                 {/* <div className="luminix-about-card">
                   <h2 className="">12+</h2>
                   <h5>Years of experience</h5>

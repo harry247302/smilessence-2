@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <Wrapper>
       <HeaderOne />
-      <Breadcrumb title="Portfolio" subtitle="Portfolio" bg_img="portfolio-breadcrumb-bg" />
+      <Breadcrumb title="International Services" subtitle="International Servuces" bg_img="portfolio-breadcrumb-bg" />
       <PortfolioArea />
       {/* <CtaHomeTwo /> */}
       <FooterTwo />
