@@ -7,11 +7,12 @@ import service_img_1 from "@/assets/service/root-canal -smilessence.jpg";
 import service_img_2 from "@/assets/images/service/icon4.svg";
 import service_img_3 from "@/assets/images/service/icon5.svg";
 import service_img_4 from "@/assets/images/service/icon6.svg";
-import service_img_5 from "@/assets/images/service/icon1.svg";
+// import service_img_5 from "@/assets/images/service/icon1.svg";
 import service_img_6 from "@/assets/images/service/icon2.svg";
 import service_img_7 from "@/assets/images/service/icon7.svg";
 import service_img_8 from "@/assets/images/service/icon8.svg";
 import service_img_9 from "@/assets/images/service/icon9.svg";
+import service_img_5 from "/assets/services/all-on-four-dental-implants-smilessence.jpg";
 
 export interface ServiceItem {
   id: number;

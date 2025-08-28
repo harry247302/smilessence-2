@@ -34,8 +34,8 @@ const Service =   () => {
 
       <Breadcrumb
         title={service?.service_title || "Service Details"}
-        subtitle=""
-        bg_img="service-breadcrumb-bg"
+        subtitle="Service Details"
+        bg_img={service?.banner_image || "singleblog-breadcrumb-bg"}
       />
 
       {service && <ServiceArea service={service} />}
