@@ -18,8 +18,9 @@ export default function ContactArea() {
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="luminix-contact-us-thumb" data-aos="fade-up" data-aos-duration="700">
-                <Image width={526} height={632} src={contact3_img} alt="here is theme image" />
+              <div className="luminix-contact-us-thumb" >
+                {/* <Image width={526} height={632} src={contact3_img} alt="here is theme image" /> */}
+                <img src="/assets/images/contact-us/contact3.png" alt="" />
               </div>
             </div>
             <div className="col-lg-7">

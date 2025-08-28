@@ -38,7 +38,7 @@ Our Dental Clinic has two dental experts available for your convenience:      </
               <Link href="/single-team">
                 <h5>Dr. (Prof) Meenu Vinayak</h5>
               </Link>
-              <p >BDS, MDS - Prosthodontist & Crown Bridge</p>
+              <p style={{fontSize:"15px"}} >BDS, MDS - Prosthodontist & Crown Bridge</p>
               <div className="luminix-team-social">
                 <ul>
                   {socialLinks.map((link, index) => (
@@ -61,12 +61,12 @@ Our Dental Clinic has two dental experts available for your convenience:      </
               <Link href="/single-team">
                 <h5>Dr. (Prof) Vineet Vinayak</h5>
               </Link>
-              <p >BDS, MDS - Conservative Dentistry & Endodontics</p>
+              <p style={{fontSize:"15px"}}  >BDS, MDS - Conservative Dentistry & Endodontics</p>
               <div className="luminix-team-social">
                 <ul>
                   {socialLinks.map((link, index) => (
                     <li key={index}>
-                      <Link href={link.href} target="_blank" dangerouslySetInnerHTML={{ __html: link.svg }} />
+                      <Link  href={link.href} target="_blank" dangerouslySetInnerHTML={{ __html: link.svg }} />
                     </li>
                   ))}
                 </ul>
