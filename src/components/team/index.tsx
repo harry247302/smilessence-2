@@ -11,7 +11,7 @@ const Team = () => {
   return (
     <Wrapper>
       <HeaderOne />
-      <Breadcrumb title="Our Team" subtitle="Our Team" bg_img="team-breadcrumb-bg" />
+      <Breadcrumb title="Testemonials" subtitle="Testemonials" bg_img="team-breadcrumb-bg" />
       <TeamArea />
       <FooterOne/>          
     </Wrapper>
