@@ -28,7 +28,7 @@ export default function ErrorArea() {
           </div>
         </div>
       </div>
-      <CtaHomeTwo />
+      {/* <CtaHomeTwo /> */}
       <FooterTwo />
     </Wrapper>
   )

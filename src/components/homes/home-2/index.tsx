@@ -7,7 +7,7 @@ import ServiceHomeTwo from "./ServiceHomeTwo";
 import PortfolioHomeTwo from "./PortfolioHomeTwo";
 import TestimonialHomeTwo from "./TestimonialHomeTwo";
 import BlogHomeTwo from "./BlogHomeTwo";
-import CtaHomeTwo from "./CtaHomeTwo";
+// import CtaHomeTwo from "./CtaHomeTwo";
 import FooterTwo from "@/layouts/footers/FooterTwo";
 
  
@@ -23,7 +23,7 @@ const HomeTwo = () => {
 			<PortfolioHomeTwo />
 			<TestimonialHomeTwo />
 			<BlogHomeTwo />
-			<CtaHomeTwo />
+			{/* <CtaHomeTwo /> */}
 			<FooterTwo />      
 		</Wrapper>
 	);
