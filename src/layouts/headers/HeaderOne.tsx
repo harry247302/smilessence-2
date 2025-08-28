@@ -50,39 +50,49 @@ useEffect(() => {
         <div className="luminix-header-top bg-accent">
           <div className="cotainer" style={{ width: "99%", margin: "auto" }}>
             <div className="luminix-header-info-wraper">
-              <div className="luminix-header-info-wrap" style={{width:"100%"}} >
-                <div className="luminix-header-info-data" style={{width:"100%"}}>
-                  <ul style={{display:"flex",alignContent:"center",justifyContent:"space-between",width:"100%"}}>
-                
-                   <div>
-                     <li >
-                      <Image
-                        width={17}
-                        height={20}
-                        src={location_icon}
-                        alt="here is theme image"
-                      />
-                      SFF/ 102, KFF 102 KFF 103, Ansal Palam Triangle, (Next to
-                      McDonald's) Palam Vihar, Gurgaon – 122017
-                    </li>
-                      
-                   </div>
-                      <div>
-                         <li>
-                      <Image
-                        width={20}
-                        height={21}
-                        src={clock_icon}
-                        alt="here is theme image"
-                      />
-                      Open All Days : 09:00am to 8:30pm
-                    </li>
+              <div
+                className="luminix-header-info-wrap"
+                style={{ width: "100%" }}
+              >
+                <div
+                  className="luminix-header-info-data"
+                  style={{ width: "100%" }}
+                >
+                  <ul
+                    style={{
+                      display: "flex",
+                      alignContent: "center",
+                      justifyContent: "space-between",
+                      width: "100%",
+                    }}
+                  >
+                    <div>
+                      <li>
+                        <Image
+                          width={17}
+                          height={20}
+                          src={location_icon}
+                          alt="here is theme image"
+                        />
+                        SFF/ 102, KFF 102 KFF 103, Ansal Palam Triangle, (Next
+                        to McDonald's) Palam Vihar, Gurgaon – 122017
+                      </li>
+                    </div>
+                    <div>
+                      <li>
+                        <Image
+                          width={20}
+                          height={21}
+                          src={clock_icon}
+                          alt="here is theme image"
+                        />
+                        Open All Days : 09:00am to 8:30pm
+                      </li>
                       <li className="hide"> +91 9811 303 933</li>
-                      </div>
+                    </div>
                   </ul>
                 </div>
               </div>
-            
             </div>
           </div>
         </div>
@@ -155,9 +165,7 @@ useEffect(() => {
                                             (inner_sub_item, inner_sub_i) => (
                                               <li key={inner_sub_i}>
                                                 <Link
-                                                  href={
-                                                    inner_sub_item.link
-                                                  }
+                                                  href={inner_sub_item.link}
                                                 >
                                                   {inner_sub_item.title}
                                                 </Link>
@@ -171,9 +179,7 @@ useEffect(() => {
                                 } else {
                                   return (
                                     <li key={sub_i}>
-                                      <Link href={ "#"}>
-                                        {sub_item.title}
-                                      </Link>
+                                      <Link href={"#"}>{sub_item.title}</Link>
                                     </li>
                                   );
                                 }
@@ -221,9 +227,19 @@ useEffect(() => {
                       className="luminix-menu-toggle d-inline-block d-xl-none"
                       onClick={() => setOpenMenu(!openMenu)}
                     >
-                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-list" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-</svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        fill="white"
+                        className="bi bi-list"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                        />
+                      </svg>
                     </button>
                   </nav>
                 </div>
