@@ -4,7 +4,7 @@ import Image from 'next/image';
 import ContactForm from '@/form/ContactForm';
  
 // images import  
-import contact2_img from "@/assets/images/contact-us/contact2.png";
+import contact3_img from "@/assets/images/contact-us/contact3.png";
 import call_img from "@/assets/images/contact-us/call.svg";
 import email_img from "@/assets/images/contact-us/email.svg";
 import location_img from "@/assets/images/contact-us/location.svg"; 
@@ -19,7 +19,7 @@ export default function ContactArea() {
           <div className="row">
             <div className="col-lg-5">
               <div className="luminix-contact-us-thumb" data-aos="fade-up" data-aos-duration="700">
-                <Image width={526} height={632} src={contact2_img} alt="here is theme image" />
+                <Image width={526} height={632} src={contact3_img} alt="here is theme image" />
               </div>
             </div>
             <div className="col-lg-7">
@@ -34,38 +34,40 @@ export default function ContactArea() {
           <div className="luminix-contact-us-info-box">
             <div className="row">
               <div className="col-xl-4 col-lg-6">
-                <div className="luminix-contact-us-info-wrap">
+                <div className="luminix-contact-us-info-wrap" style={{backgroundColor: '#02232f'}}>
                   <div className="luminix-contact-us-info-icon">
                     <Image width={34} height={34} src={call_img} alt="here is theme image" />
                   </div>
-                  <div className="luminix-contact-us-info-data">
+                  <div className="luminix-contact-us-info-data" style={{height: '160px'}}>
                     <h5>Call Us</h5>
-                    <a href="+088">+088-748-7888-999</a>
-                    <a href="+123">+088-103-3914-999</a>
+
+                    <a href="tel:+911244088333">+91 124 4088333</a>
+                    <a href="tel:+919811334633">+91 9811334633</a>
+                    <a href="tel:+919811303933">+91 9811303933</a>
                   </div>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-6">
-                <div className="luminix-contact-us-info-wrap">
+                <div className="luminix-contact-us-info-wrap" style={{backgroundColor: '#02232f'}}>
                   <div className="luminix-contact-us-info-icon">
                     <Image width={39} height={30} src={email_img} alt="here is theme image" />
                   </div>
-                  <div className="luminix-contact-us-info-data">
+                  <div className="luminix-contact-us-info-data" style={{height: '160px'}}>
                     <h5>Send Email</h5>
-                    <a href="mailto:name@gamil.com">support@gmail.com</a>
-                    <a href="mailto:name@gamil.com">example@gmail.com</a>
+                    <a href="mailto:name@gamil.com">drvineetvinayak@outlook.com</a>
+                    {/* <a href="mailto:name@gamil.com">example@gmail.com</a> */}
                   </div>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-6">
-                <div className="luminix-contact-us-info-wrap">
+                <div className="luminix-contact-us-info-wrap" style={{backgroundColor: '#02232f'}}>
                   <div className="luminix-contact-us-info-icon">
                     <Image width={28} height={35} src={location_img} alt="here is theme image" />
                   </div>
-                  <div className="luminix-contact-us-info-data">
+                  <div className="luminix-contact-us-info-data" style={{height: '160px'}}>
                     <h5>Office Address</h5>
-                    <span>42 Mamnoun Street,</span>
-                    <span>Saba Carpet, UK</span>
+                    <span style={{fontSize:"21px !important"}}>SFF/ 102, KFF 102 KFF 103, <br /> Ansal Palam Triangle, <br />(Next to McDonald's) <br />Palam Vihar, <br />Gurgaon – 122017</span>
+                   
                   </div>
                 </div>
               </div>

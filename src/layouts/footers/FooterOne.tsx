@@ -69,7 +69,7 @@ export default function FooterOne() {
                   <div className="luminix-footer-title">
                     <h5>Our Pages</h5>
                   </div>
-                  <ul style={{ listStyle: 'none !important' }}>
+                  <ul className='list-unstyled'>
                     <li>
                       <Link href="/">Home</Link>
                     </li>
@@ -89,7 +89,7 @@ export default function FooterOne() {
                       <Link href="/Gallery">Gallery</Link>
                     </li>
                     <li>
-                      <Link href="/blog">Contact Us</Link>
+                      <Link href="/contact-us">Contact Us</Link>
                     </li>
                   </ul>
                 </div>
@@ -99,7 +99,7 @@ export default function FooterOne() {
                   <div className="luminix-footer-title">
                     <h5>Contact Info</h5>
                   </div>
-                  <ul style={{ listStyle: 'none !important' }}>
+                  <ul className='list-unstyled'>
                     <li>
                       <Image width={22} height={25} src={location_img} alt="here is theme image" />
                       SFF/ 102, KFF 102 KFF 103, Ansal Palam Triangle, (Next to McDonald's) Palam Vihar, Gurgaon – 122017
@@ -143,7 +143,7 @@ export default function FooterOne() {
           </div>
           
           <div className="luminix-footer-bottom-text">
-            <p> <a href="">Terms & Condition</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Privary and Policy</a> </p>
+            <p> <a href="/terms-and-conditions">Terms & Condition</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/privacy-and-policy">Privacy and Policy</a> </p>
             <p>© Copyright {new Date().getFullYear()}, All Rights Reserved by Smilessence - The Specialist Dental Centre</p>
           </div>
         </div>
