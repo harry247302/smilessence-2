@@ -4,6 +4,7 @@ import Wrapper from "@/layouts/Wrapper";
 import CtaHomeTwo from "../homes/home-2/CtaHomeTwo";
 import FooterTwo from "@/layouts/footers/FooterTwo";
 import BlogArea from "./BlogArea";
+import FooterOne from "@/layouts/footers/FooterOne";
 
  
 
@@ -13,8 +14,8 @@ export default function Blog() {
       <HeaderOne />
       <Breadcrumb title="Blog" subtitle="Blog" bg_img="blog-breadcrumb-bg" />
       <BlogArea />
-      <CtaHomeTwo />
-      <FooterTwo />
+      {/* <CtaHomeTwo /> */}
+      <FooterOne />
     </Wrapper>
   )
 }

@@ -88,9 +88,9 @@ const menu_data = [
 		
 	},
 	{
-		title: "Gallery",
+		title: "Blogs",
 		has_dropdown: false,
-		link: "/gallery",
+		link: "/blog",
 		
 	}
 ];
