@@ -30,7 +30,7 @@ const menu_data = [
 					{ title: "All on 6 Implants", link: "/service/All%20On%206%20Implants" },
 					{ title: "Advantages Of Implants", link: "/service/Advantages%20of%20Implants	" },
 					{ title: "AstraTech Implants", link: "/service/Astra%20Tech%20Implants" },
-					{ title: "How An Implants Procedure", link: "/service/How%20An%20Implant%20Procedure",}
+					{ title: "How An Implants Procedure?", link: "/service/How%20An%20Implant%20Procedure",}
 				]},
 			{ title: "Braces", link: "/", has_inner_dropdown: true,
 				sub_menus: [
@@ -43,7 +43,7 @@ const menu_data = [
 			
 			{ title: "Root Canal", link: "/", has_inner_dropdown: false },
 			{ title: "Multiple Teeth Replacement", link: "/service/Multiple%20Teeth%20Replacement", has_inner_dropdown: false },
-			{ title: "Digital Crown % Bridges", link: "/service/Porcelain%20Crown%20&%20Bridges", has_inner_dropdown: false },
+			{ title: "Porcelain Crown & Bridges", link: "/service/Porcelain%20Crown%20&%20Bridges", has_inner_dropdown: false },
 			{ title: "Child Dentistry", link: "/service/Child%20Dentistry", has_inner_dropdown: false },
 			{ title: "Gum Treatment", link: "/service/Gum%20Treatment", has_inner_dropdown: false },
 			{ title: "Porcelain Corwn & Bridges", link: "/service/Porcelain%20Crown%20&%20Bridges", has_inner_dropdown: false },
