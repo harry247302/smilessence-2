@@ -16,7 +16,7 @@ const SingleBlog: FC<ServiceProps>  = () => {
   return (
     <Wrapper>
       <HeaderOne />
-      <Breadcrumb title="Blog Details" subtitle="Blog Details" bg_img="singleblog-breadcrumb-bg" />
+      <Breadcrumb title="Services Details" subtitle="Services Details" bg_img="singleblog-breadcrumb-bg" />
       <SingleBlogArea />
       {/* <CtaHomeTwo /> */}
       <FooterOne />

@@ -9,7 +9,7 @@ export default function AchievementsPage() {
   return (
     <Wrapper>
       <HeaderOne />
-      <Breadcrumb title="Our Research" subtitle="Our Research" bg_img="blog-breadcrumb-bg" />
+      <Breadcrumb title="Our Achievements" subtitle="Our Achievements" bg_img="singlecareer-breadcrumb-bg" />
       <Achievements />
       <FooterOne />
     </Wrapper>
