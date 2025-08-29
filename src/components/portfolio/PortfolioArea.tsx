@@ -32,7 +32,7 @@ export default function PortfolioArea() {
         <div className="container">
           <div className="luminx-section-title ">
             <h2 style={{fontSize:"50px",textAlign:"center"}}>Dedicated Team of International Customer Care</h2>
-            <p style={{textAlign:"center",marginTop:"10px"}}>At The Dental Roots Clinic – Gurgaon and South Delhi, we have a dedicated team along with experienced support staff who carefully plan and coordinate treatments for our international patients, including visitors from overseas and NRIs. Our facilitation team consists of the clinic director, a dental tourism coordinator, an organizer, and a supervising doctor who together ensure smooth planning and exceptional care for every patient.</p>
+            <p style={{textAlign:"center",marginTop:"10px"}}>At Smilessence - The Specialist Dental Centre, we have a dedicated team along with experienced support staff who carefully plan and coordinate treatments for our international patients, including visitors from overseas and NRIs. Our facilitation team consists of the clinic director, a dental tourism coordinator, an organizer, and a supervising doctor who together ensure smooth planning and exceptional care for every patient.</p>
             <div className="luminix-portfolio-menu mt-50">
               <ul id="watch-filter-gallery" className="option-set clear-both" data-option-key="filter">
                 {/* {portfolio_filters.map((filter, i) => (

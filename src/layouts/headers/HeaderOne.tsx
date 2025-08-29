@@ -201,7 +201,7 @@ useEffect(() => {
                         ? "   text-black shadow-md rounded-5"
                         : "bg-transparent text-black"
                     }`}
-                    href="/"
+                    href="/contact-us"
                   >
                     <p
                       style={{
