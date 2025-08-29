@@ -5,20 +5,20 @@ import { Carousel, Modal, Button } from "react-bootstrap";
 import { useSwipeable } from "react-swipeable";
 
 const images = [
-  "https://www.smilessence.co.in/assets/images/Awards/1.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/2.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/3.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/4.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/5.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/6.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/7.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/8.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/9.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/10.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/11.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/12.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/13.JPG",
-  "https://www.smilessence.co.in/assets/images/Awards/14.JPG",
+  "/assets/images/awards/1.JPG",
+  "/assets/images/awards/2.JPG",
+  "/assets/images/awards/3.JPG",
+  "/assets/images/awards/4.JPG",
+  "/assets/images/awards/5.JPG",
+  "/assets/images/awards/6.JPG",
+  "/assets/images/awards/7.JPG",
+  "/assets/images/awards/9.JPG",
+  "/assets/images/awards/10.JPG",
+  "/assets/images/awards/11.JPG",
+  "/assets/images/awards/12.JPG",
+  "/assets/images/awards/13.JPG",
+  "/assets/images/awards/14.JPG",
+  "/assets/images/awards/15JPG",
 ];
 
 export default function AwardsCarousel() {
