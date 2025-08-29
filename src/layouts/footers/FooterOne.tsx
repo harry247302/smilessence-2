@@ -115,8 +115,16 @@ export default function FooterOne() {
                     </li>
                     <li>
                       <a href="tel:+088">
-                        <Image width={24} height={25} src={call_img} alt="here is theme image" />
-                        +91 9811 303 933f
+                        {/* <Image width={24} height={25} src={call_img} alt="here is theme image" /> */}
+                        <strong> For Appointment With Specialists</strong>
+                       
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:+088">
+                      
+                       <strong>Tel. :</strong>  0124 4088 333, 4072724 <br />
+                       <strong>Mob. :</strong>  +91 9811303933
                       </a>
                     </li>
                     <li>

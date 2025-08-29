@@ -44,7 +44,7 @@ export default function ContactArea() {
 
                     <a href="tel:+911244088333">+91 124 4088333</a>
                     <a href="tel:+919811334633">+91 9811334633</a>
-                    <a href="tel:+919811303933">+91 9811303933</a>
+                   
                   </div>
                 </div>
               </div>

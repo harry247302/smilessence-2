@@ -2062,6 +2062,7 @@ a.luminix-header-info img {
 @media (max-width: 1350px) {
   .main-menu > ul > li {
     margin: 0 7px;
+    font-size: 16px;
   }
 }
 .main-menu ul {

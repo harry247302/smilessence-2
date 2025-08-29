@@ -105,17 +105,14 @@ useEffect(() => {
             <div className="row gx-3 align-items-center justify-content-between">
               <div className="col-8 col-sm-auto ">
                 <div className="">
-                  {/* <Link href="/"> */}
+                  <Link href="/">
                   <Image
                     width={70}
                     src={logo_dark}
                     style={{ borderRadius: "100%" }}
                     alt="logo"
                   />
-                  {/* <h5 className="m-2" style={{ color: "white" }}>
-                    Smilessence
-                  </h5> */}
-                  {/* </Link> */}
+                  </Link>
                 </div>
               </div>
               <div className="col">
@@ -208,8 +205,9 @@ useEffect(() => {
                   >
                     <p
                       style={{
+                        fontSize:"15px",
                         color: "#7ec9e4",
-                        padding: "5px 30px",
+                        padding: "0px 10px",
                         // fontWeight: 600,
                         borderRadius: "100px",
                         backgroundColor: "white",
