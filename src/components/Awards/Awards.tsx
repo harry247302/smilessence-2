@@ -18,7 +18,7 @@ const images = [
   "/assets/images/awards/12.JPG",
   "/assets/images/awards/13.JPG",
   "/assets/images/awards/14.JPG",
-  "/assets/images/awards/15JPG",
+  "/assets/images/awards/15.JPG",
 ];
 
 export default function AwardsCarousel() {
