@@ -1,10 +1,11 @@
 import Breadcrumb from "@/common/Breadcrumb";
 import HeaderOne from "@/layouts/headers/HeaderOne";
 import Wrapper from "@/layouts/Wrapper";
-import SingleServiceArea from "./SingleServiceArea";
+// import SingleServiceArea from "./SingleServiceArea";
 
 import FooterTwo from "@/layouts/footers/FooterTwo";
 import FooterOne from "@/layouts/footers/FooterOne";
+import SingleServiceArea from "./SingleServiceArea";
 
  
 

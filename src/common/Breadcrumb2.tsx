@@ -17,7 +17,7 @@ const Breadcrumb2 = ({ title, subtitle, bg_img }: BreadcrumbProps) => {
         <div className="containe">
 
           <div className="breadcrumb-content">
-            <h1 className="breadcrumb-title">{title}</h1>
+            <h1 className="breadcrumb-title" >{title}</h1>
             <div className="breadcrumb-menu-wrapper">
               <div className="breadcrumb-menu-wrap">
                 <div className="breadcrumb-menu">

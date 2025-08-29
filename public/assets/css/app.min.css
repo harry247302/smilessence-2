@@ -7522,11 +7522,11 @@ textarea::placeholder {
 .breadcrumb-wrapperr::before {
   content: "";
   width: 100%;
-  /* height: auto; */
+  /* height: 95%; */
   top: 0;
   left: 0;
   position: absolute;
-  /* background: #0000008f; */
+  background: #00000079;
 }
 @media (max-width: 1199px) {
   .breadcrumb-wrapperr {

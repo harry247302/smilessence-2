@@ -187,7 +187,7 @@ export default function HeroHomeOne() {
           />
           <span className="fw-medium" style={{color:""}}>
             Highly Recommended by Expats, Influencers, Fashion Industry for{' '}
-            <strong>Smilemakeover and Full M  outh Implants</strong>
+            <strong>Smile makeover and Full Mouth Implants</strong>
           </span>
         </div>
       </div>

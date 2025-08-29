@@ -32,7 +32,7 @@ const menu_data = [
 					{ title: "Aligners (Invasilign)", link: "/cooming-soon" }
 				]},
 			
-			{ title: "Root Canal", link: "/", has_inner_dropdown: false },
+			{ title: "Root Canal", link: "/service/Root%20Canal", has_inner_dropdown: false },
 			{ title: "Multiple Teeth Replacement", link: "/service/Multiple%20Teeth%20Replacement", has_inner_dropdown: false },
 			{ title: "Porcelain Crown & Bridges", link: "/service/Porcelain%20Crown%20&%20Bridges", has_inner_dropdown: false },
 			{ title: "Child Dentistry", link: "/service/Child%20Dentistry", has_inner_dropdown: false },

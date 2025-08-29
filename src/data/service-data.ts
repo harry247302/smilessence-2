@@ -30,11 +30,11 @@ export interface ServiceItem {
 export const service_data: ServiceItem[] = [
   {
     id: 0,
-    service_title: "Cloud Solutions",
-    default_image: "/assets/services/root-canal-smilessence.jpg",
-    banner_image: "/assets/services/banner/root-canal -banner (1).jpg",
+    service_title: "Root Canal",
+  banner_image: "/assets/services/banner/root.jpg",
+    default_image: "/assets/services/dental-implants-smilessence.jpg",
     description: `<div className="col-lg-8 col-12">
-  <h3 className="mb-4">Root Canal Treatment in Gurgaon – Painless and Precise</h3>
+  <h4 className="mb-4">Root Canal Treatment in Gurgaon – Painless and Precise</h4>
 
   <div>
     <h3 style="color:#166280;font-size:22px;margin-top:20px">About Root Canal Treatment (RCT)</h3>
