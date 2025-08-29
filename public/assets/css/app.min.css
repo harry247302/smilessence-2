@@ -7725,7 +7725,7 @@ a.current {
 }
 .luminix-menu-wrapper .luminix-menu-area {
   width: 100%;
-  max-width: 310px;
+  max-width: 100%;
   background-color: var(--white-bg);
   height: 100%;
   position: relative;
@@ -8152,3 +8152,24 @@ a.luminix-default-btn.sm-size {
     }
   }
 /* `}</style> */
+
+
+.bg{
+  color: black;
+  padding: 0px 20px;
+}
+
+.bg:hover{
+  color: white;
+  background-color:rgb(212, 212, 212);
+  
+}
+
+@media (max-width: 450px) {
+  .hide-navbar{
+    display: none;
+  }
+  
+}
+
+

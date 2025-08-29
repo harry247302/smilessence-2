@@ -4,93 +4,124 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-import logo_dark from "@/assets/images/logo/logo-dark.png";
 
 interface OffCanvasProps {
   setOpenMenu: (value: boolean) => void;
   openMenu: boolean;
 }
 
-
 const OffCanvas = ({ setOpenMenu, openMenu }: OffCanvasProps) => {
-
   const [navTitle, setNavTitle] = useState("");
-  //openMobileMenu
+
   const openMobileMenu = (menu: string) => {
-    if (navTitle === menu) {
-      setNavTitle("");
-    } else {
-      setNavTitle(menu);
-    }
+    setNavTitle(navTitle === menu ? "" : menu);
   };
-
-  const [navTitle2, setNavTitle2] = useState("");
-  //openMobileMenu
-  const openMobileMenu2 = (menu: string) => {
-    if (navTitle2 === menu) {
-      setNavTitle2("");
-    } else {
-      setNavTitle2(menu);
-    }
-  };
-
 
   return (
     <>
+      <div
+
+        className={`luminix-menu-wrapper ${openMenu ? "luminix-body-visible" : ""
+          }`}
+      >
+        <div className="luminix-menu-area d-flex" style={{
+          backgroundImage: `url("/assets/images/portfolio/17658.webp")`,
+          backgroundSize: "cover",
+          // backgroundPosition: "center",
+        }}>
+          {/* LEFT SIDE IMAGE + CONTACT INFO */}
+          <div className="hide-navbar col-md-6 d-flex align-items-center justify-content-center bg-cover text-white p-4 position-relative"
+            style={{
+              backgroundImage: `url("/assets/images/portfolio/young-female-patient-visiting-dentist-office.jpg")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div style={{
+              backdropFilter: "blur(10px)",
+              backgroundColor: "rgba(255,255,255,0.2)",
+              padding: "20px",
+              borderRadius: "12px", width: "400px", border: "0.1px solid white"
+            }} className="   text-dark py-5 ">
+              <h5 className="fw-bold text-uppercase" style={{ fontSize: "10px", textAlign: "center" }}>Contact</h5>
+              <p className="mb-1 mt-3" style={{ textAlign: "center", fontSize: "15px" }}>
+                A – 738, Sushant Lok 1 Rd, Block A,<br />
+                Sushant Lok Phase I, Sector 43, <br />
+                Gurugram, Haryana 122001
+              </p>
+              <p className="" style={{ textAlign: "center", fontSize: "15px" }}>+91-9650440004</p>
+              <div className="mb-3" style={{ textAlign: "center", fontSize: "15px" }}>
+                <Link style={{ color: "black" }} href="#">Careers</Link> |{" "}
+                <Link style={{ color: "black" }} href="#">Contact</Link> |{" "}
+                <Link style={{ color: "black" }} href="#">FAQ’s</Link>
+              </div>
 
 
-      <div className={`luminix-menu-wrapper ${openMenu ? "luminix-body-visible" : ""}`}>
-        <div className="luminix-menu-area text-center">
-          <div className="luminix-menu-mobile-top">
-            <div className="mobile-logo">
-              <Link href="/">
-                <Image width={50} height={50} style={{borderRadius:"100%"}} src={logo_dark} alt="logo" />
-              </Link>
+
+              {/* Button */}
+              <div className="d-flex justify-content-center">
+                <button style={{ fontWeight: "100", fontSize: "12px", width: "200px", margin: "auto" }} className="btn btn-dark  ">
+                  Book an Appointment
+                </button>
+              </div>
             </div>
-            <button className="luminix-menu-toggle mobile" onClick={() => setOpenMenu(false)}>
-              <i className="ri-close-line"></i>
-            </button>
-          </div>
-          <div className="luminix-mobile-menu">
-            <ul>
-              {menu_data.map((item, i) => (
-                <li key={i} className={`menu-item-has-children luminix-item-has-children ${navTitle === item.title ? "luminix-active" : ""}`}>
-                  <Link href={item.link}>{item.title}
-                    {item.has_dropdown ? <span className="luminix-mean-expand" onClick={() => openMobileMenu(item.title)}></span> : null}
-                  </Link>
-                  {item.has_dropdown && (
-                    <ul className={`sub-menu luminix-submenu ${navTitle === item.title ? "luminix-open" : ""}`} style={{ display: navTitle === item.title ? "block" : "none", }}>
-                      {item.sub_menus?.map((submenu, i) => (
-                        <li key={i} className={`menu-item-has-children luminix-item-has-children ${navTitle2 === submenu.title ? "luminix-active" : ""}`}>
-                          <Link className="no-border" href={submenu.link}>{submenu.title}
-                            {('has_inner_dropdown' in submenu) && submenu.has_inner_dropdown ? <span className="luminix-mean-expand" onClick={() => openMobileMenu2(submenu.title)}></span> : null}
-                          </Link>
-                          {('has_inner_dropdown' in submenu) && submenu.has_inner_dropdown && (
-                            <ul className={`sub-menu luminix-submenu ${navTitle2 === submenu.title ? "luminix-open" : ""}`} style={{ display: navTitle2 === submenu.title ? "block" : "none", }}>
-                              {submenu?.sub_menus?.map((subsubmenu, sub_i) => (
-                                <li key={sub_i}>
-                                  <Link href={subsubmenu.link}>{subsubmenu.title}</Link>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
 
-            </ul>
+
           </div>
-          <div className="luminix-mobile-menu-btn">
-            {/* <Link className="luminix-default-btn sm-size" href="/contact-us" data-text="Get in Touch"><span className="btn-wraper">Get in Touch</span></Link> */}
-            {/* <Link className="luminix-default-btn sm-size" href="/about-us" data-text="Get in Touch"><span className="btn-wraper">About Us</span></Link> */}
+          {/* CLOSE BUTTON */}
+          <button
+            className="position-absolute top-0 start-0 m-3 rounded-circle"
+            style={{
+              backdropFilter: "blur(10px)",
+              backgroundColor: "rgba(255,255,255,0.2)", width: "40px", height: "40px"
+            }}
+            onClick={() => setOpenMenu(false)}
+          >
+            ✕
+          </button>
+          {/* RIGHT SIDE NAVIGATION */}
+          <div
+            className="col-md-6 w-100 d-flex align-items-center justify-content-center ">
+            <div className="luminix-mobie-menu w-75">
+              <ul className="list-unstyled">
+                {menu_data.map((item, i) => (
+                  <li
+                    key={i}
+                    className={`d-flex align-items-center gap-2 p-2 mb-2 rounded ${navTitle === item.title ? "bg-light fw-bold" : ""
+                      }`}
+                  >
+                    <div style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "30px",
+                      height: "30px",
+                      border: "1px solid #ccc",
+                      borderRadius: "8px",
+                      backgroundColor: "#f9f9f9",
+                      cursor: "pointer"
+                    }}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        className="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                      </svg>
+                    </div>
+
+                    <Link
+                      className="bg"
+                      style={{ fontSize: "13px" }}
+                      href={item.link}
+                      onClick={() => openMobileMenu(item.title)}
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-
-
     </>
   );
 };

@@ -97,11 +97,11 @@ useEffect(() => {
           </div>
         </div>
         <div
-          className={`cntainer transition-all duration-600  ${
+          className={`cntainer transition-all  duration-600  ${
             scrolled ? "bg-accent  shadow-md" : "bg-transparent"
           }`}
         >
-          <div style={{ width: "90%", margin: "auto" }} className="cntainer">
+          <div style={{ width: "90%", margin: "auto" }} className="pt-2 cntainer">
             <div className="row gx-3 align-items-center justify-content-between">
               <div className="col-8 col-sm-auto ">
                 <div className="">
@@ -122,7 +122,7 @@ useEffect(() => {
                 <div className="luminix-main-menu-item">
                   <nav className="main-menu menu-style1 d-none d-xl-block menu-left">
                     <ul>
-                      {menu_data.map((item, i) => (
+                      {menu_data.slice(0,6).map((item, i) => (
                         <li
                           key={i}
                           className={`${
@@ -224,7 +224,7 @@ useEffect(() => {
                 <div className="luminix-header-menu">
                   <nav className="navbar site-navbar justify-content-between">
                     <button
-                      className="luminix-menu-toggle d-inline-block d-xl-none"
+                      className="luminix-menu-toggle d-inline-block "
                       onClick={() => setOpenMenu(!openMenu)}
                     >
                       <svg

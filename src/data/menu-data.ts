@@ -88,6 +88,18 @@ const menu_data = [
 		
 	},
 	{
+		title: "International Patients",
+		has_dropdown: false,
+		link: "/international-clients",
+		
+	},
+	{
+		title: "Testemonials",
+		has_dropdown: false,
+		link: "/testemonials",
+		
+	},
+	{
 		title: "Blogs",
 		has_dropdown: false,
 		link: "/blog",

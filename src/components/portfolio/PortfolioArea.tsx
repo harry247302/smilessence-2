@@ -30,11 +30,12 @@ export default function PortfolioArea() {
     <>
       <div className="luminix-padding-section">
         <div className="container">
-          <div className="luminix-section-title center">
-            <h2>We're passionate about our work</h2>
+          <div className="luminx-section-title ">
+            <h2 style={{fontSize:"50px",textAlign:"center"}}>Dedicated Team of International Customer Care</h2>
+            <p style={{textAlign:"center",marginTop:"10px"}}>At The Dental Roots Clinic – Gurgaon and South Delhi, we have a dedicated team along with experienced support staff who carefully plan and coordinate treatments for our international patients, including visitors from overseas and NRIs. Our facilitation team consists of the clinic director, a dental tourism coordinator, an organizer, and a supervising doctor who together ensure smooth planning and exceptional care for every patient.</p>
             <div className="luminix-portfolio-menu mt-50">
               <ul id="watch-filter-gallery" className="option-set clear-both" data-option-key="filter">
-                {portfolio_filters.map((filter, i) => (
+                {/* {portfolio_filters.map((filter, i) => (
                   <li
                     key={filter.value}
                     className={`wow fadeInUpX ${activeFilter === filter.value ? "active" : ""}`}
@@ -44,7 +45,7 @@ export default function PortfolioArea() {
                   >
                     {filter.label}
                   </li>
-                ))}
+                ))} */}
               </ul>
             </div>
           </div>
@@ -55,14 +56,14 @@ export default function PortfolioArea() {
                 <div className="luminix-p-wrap wrap2">
                   <div className="luminix-p-thumb">
                     <Image width={item.width} height={item.height} src={item.image} alt={item.title} />
-                    <div className="luminix-p-content">
+                    {/* <div className="luminix-p-content">
                       <h5>{item.title}</h5>
                       <div className="luminix-p-btn">
                         <Link href={item.href}>
                           <RightArrawWhitIcon />
                         </Link>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
