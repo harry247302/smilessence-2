@@ -1,16 +1,7 @@
  
 
 const menu_data = [
-	{
-		title: "Home",
-		has_dropdown: false,
-		link: "/",
-		// sub_menus: [
-			// { link: "/", title: "Demo list" },
-			// { link: "/", title: "Demo list" },
-			// { link: "/", title: "Demo list" },
-		// ],
-	},
+	
 		{
 		title: "Who we are",
 		has_dropdown: false,
@@ -72,6 +63,7 @@ const menu_data = [
 		// 	{ title: "Blog Details", link: "/" },
 		// ],
 	},
+	
 	{
 		title: "Dental Implants",
 		has_dropdown: false,
@@ -82,15 +74,15 @@ const menu_data = [
 		],
 	},
 	{
-		title: "Contact Us",
-		has_dropdown: false,
-		link: "/contact-us",
-		
-	},
-	{
 		title: "International Patients",
 		has_dropdown: false,
 		link: "/international-clients",
+		
+	},
+	{
+		title: "Contact Us",
+		has_dropdown: false,
+		link: "/contact-us",
 		
 	},
 	{
@@ -102,7 +94,7 @@ const menu_data = [
 	{
 		title: "Blogs",
 		has_dropdown: false,
-		link: "/blog",
+		link: "/blogs",
 		
 	}
 ];

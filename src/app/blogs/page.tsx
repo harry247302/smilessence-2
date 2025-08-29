@@ -1,4 +1,8 @@
 // app/blogs/page.tsx
+import Breadcrumb from "@/common/Breadcrumb";
+import FooterOne from "@/layouts/footers/FooterOne";
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import Wrapper from "@/layouts/Wrapper";
 import Link from "next/link";
 
 export const metadata = {
@@ -13,7 +17,7 @@ export const viewport = {
 };
 
 async function getBlogs() {
-  const res = await fetch("http://localhost:1337/api/blogs?populate=*", {
+  const res = await fetch("https://cmsone.nmpinfotech.com/api/blogs?populate=*", {
     next: { revalidate: 0 }, // request-time fetch (no caching)
   });
 
@@ -28,35 +32,69 @@ export default async function BlogsPage() {
   const blogs = await getBlogs();
 
   return (
-    <div className="max-w-4xl mx-auto py-10">
-      <h1 className="text-3xl font-bold mb-6">Latest Blogs</h1>
 
-      <div className="grid gap-6">
-        {blogs?.data?.map((blog: any) => (
-          <div
-            key={blog.id}
-            className="border p-4 rounded-lg shadow hover:shadow-md transition"
-          >
-            <h2 className="text-xl font-semibold mb-2">
-              <Link href={`/blogs/${blog.slug}`} className="hover:underline">
-                {blog.blog_title}
-              </Link>
-            </h2>
+    <Wrapper>
+      <HeaderOne />
+      <Breadcrumb title="Blog" subtitle="Blog" bg_img="blog-breadcrumb-bg" />
+      <div className="container mx-auto py-10">
+        <h1 className="text-3xl font-bold mb-6">Latest Blogs</h1>
 
-            {blog.blog_header_image?.url && (
-              <img
-                src={`http://localhost:1337${blog.blog_header_image.url}`}
-                alt={blog.blog_title}
-                className="w-full h-48 object-cover rounded-lg mb-3"
-              />
-            )}
+        <div className="grid gap-6">
+          {blogs?.data?.map((blog: any) => (
+         <div
+  key={blog.id}
+  style={{
+    position: "relative",
+    width: "300px",
+    height: "250px",
+    borderRadius: "12px",
+    overflow: "hidden",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+    margin: "10px",
+    cursor: "pointer",
+  }}
+>
+  {/* Blog Image */}
+  {blog.blog_header_image?.url && (
+    <img
+      src={`https://cmsone.nmpinfotech.com/${blog.blog_header_image.url}`}
+      alt={blog.blog_title}
+      style={{
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+      }}
+    />
+  )}
 
-            <p className="text-gray-600 text-sm">
-              Published on {new Date(blog.publishedAt).toLocaleDateString()}
-            </p>
-          </div>
-        ))}
+  {/* Overlay */}
+  <div
+    style={{
+      position: "absolute",
+      bottom: "0",
+      left: "0",
+      width: "100%",
+      padding: "10px",
+      background: "rgba(0, 0, 0, 0.5)",
+      color: "white",
+    }}
+  >
+    <h2 style={{ fontSize: "16px", fontWeight: "bold", margin: "0 0 4px 0" }}>
+      <Link href={`/blogs/${blog.slug}`} style={{ color: "white", textDecoration: "none" }}>
+        {blog.blog_title}
+      </Link>
+    </h2>
+    <p style={{ fontSize: "12px", margin: "0" }}>
+      Published on {new Date(blog.publishedAt).toLocaleDateString()}
+    </p>
+  </div>
+</div>
+
+          ))}
+        </div>
       </div>
-    </div>
+      <FooterOne />
+    </Wrapper>
+
   );
 }

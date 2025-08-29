@@ -45,15 +45,15 @@ const OffCanvas = ({ setOpenMenu, openMenu }: OffCanvasProps) => {
             }} className="   text-dark py-5 ">
               <h5 className="fw-bold text-uppercase" style={{ fontSize: "10px", textAlign: "center" }}>Contact</h5>
               <p className="mb-1 mt-3" style={{ textAlign: "center", fontSize: "15px" }}>
-                A – 738, Sushant Lok 1 Rd, Block A,<br />
-                Sushant Lok Phase I, Sector 43, <br />
-                Gurugram, Haryana 122001
+                SFF/ 102, KFF 102 KFF 103,<br />
+               Ansal Palam Triangle, (Next to McDonald's)  <br />
+                Palam Vihar, Gurgaon – 122017
               </p>
-              <p className="" style={{ textAlign: "center", fontSize: "15px" }}>+91-9650440004</p>
+              <p className="" style={{ textAlign: "center", fontSize: "15px" }}>+91 9811 303 933</p>
               <div className="mb-3" style={{ textAlign: "center", fontSize: "15px" }}>
-                <Link style={{ color: "black" }} href="#">Careers</Link> |{" "}
-                <Link style={{ color: "black" }} href="#">Contact</Link> |{" "}
-                <Link style={{ color: "black" }} href="#">FAQ’s</Link>
+                <Link style={{ color: "black" }} href="/about-us">About Us</Link> |{" "}
+                <Link style={{ color: "black" }} href="/contact-us">Contact</Link> 
+                {/* <Link style={{ color: "black" }} href="#">FAQ’s</Link> */}
               </div>
 
 

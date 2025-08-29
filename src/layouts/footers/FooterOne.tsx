@@ -86,10 +86,13 @@ export default function FooterOne() {
                       <Link href="/contact-us">Dental Implants</Link>
                     </li>
                     <li>
-                      <Link href="/Gallery">Gallery</Link>
+                      <Link href="/gallery">Gallery</Link>
                     </li>
                     <li>
                       <Link href="/contact-us">Contact Us</Link>
+                    </li>
+                      <li>
+                      <Link href="/blogs">Blogs</Link>
                     </li>
                   </ul>
                 </div>
