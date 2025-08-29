@@ -43,8 +43,8 @@ export default function ContactArea() {
                     <h5>Call Us</h5>
 
                     <a href="tel:+911244088333">+91 124 4088333</a>
+                    <a href="tel:+919811334633">+91 9811303933</a>
                     <a href="tel:+919811334633">+91 9811334633</a>
-                   
                   </div>
                 </div>
               </div>

@@ -2367,9 +2367,10 @@ a.luminix-header-info img {
 .main-menu > ul > li {
   margin: 0 14px;
 }
-@media (max-width: 1350px) {
+@media (max-width: 1450px) {
   .main-menu > ul > li {
     margin: 0 7px;
+    font-size: 16px;
   }
 }
 .main-menu ul {

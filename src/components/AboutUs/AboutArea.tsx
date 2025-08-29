@@ -21,15 +21,15 @@ export default function AboutArea() {
         <div className="row align-items-center">
           {/* Left Section */}
           <div className="col-md-6">
-            <h4 className="fw-bold mb-3">From our family to yours</h4>
-            <p>
-              On Smilessence, you will find an abundance of information about
+            <h4 className="fw-bold mb-5 ">From our family to yours</h4>
+            <p >
+              At Smilessence - The Specialist Dental Centre, you will find an abundance of information about
               our practice, procedures we provide, and dentistry in general.
             </p>
             <p>
               You can also schedule an appointment through our website or even
               by calling us on the mentioned numbers. We work hard to ensure
-              your visit is comfortable and relaxing.
+              your visit is comfortable and relaxing <strong style={{fontSize:"20px"}}>.</strong>
             </p>
 
             <div className="d-flex gap-4 mt-4">

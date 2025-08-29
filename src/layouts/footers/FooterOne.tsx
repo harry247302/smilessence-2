@@ -50,9 +50,9 @@ export default function FooterOne() {
                   <Image width={90} height={90} style={{ borderRadius: "100px" }} src={logo_white1_img} alt="Logo" />
                   {/* </Link> */}
                   <p style={{ color: "white" }}>
-                    To achieve sustainable growth and success, we run businesses that must consistently adapt to
-                    competitive innovations, operational efficiencies and client-centric strategies.
-                  </p>
+At Smilessence - The Specialist Dental Centre, you will find an abundance of information about our practice, procedures we provide, and dentistry in general.
+
+You can also schedule an appointment through our website or even by calling us on the mentioned numbers. We work hard to ensure your visit is comfortable and relaxing                  </p>
                   <div className="luminix-social-wrap wrap2">
                     <ul>
                       {socialLinksFooter.map((link, index) => (
@@ -77,7 +77,7 @@ export default function FooterOne() {
                       <Link href="/about-us">Who we are</Link>
                     </li>
                     <li>
-                      <Link href="/certificates">Certificates</Link>
+                      <Link href="/certificates">Awards</Link>
                     </li>
                     <li>
                       <Link href="/service">Service</Link>
@@ -124,7 +124,7 @@ export default function FooterOne() {
                       <a href="tel:+088">
                       
                        <strong>Tel. :</strong>  0124 4088 333, 4072724 <br />
-                       <strong>Mob. :</strong>  +91 9811303933
+                       <strong>Mob. :</strong>  +91 9811303933, +91 9811334633
                       </a>
                     </li>
                     <li>
